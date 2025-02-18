@@ -8,14 +8,14 @@ import java.util.*;
 
 class Main {    
     public static void main(String[] args) {
-        int remainingRight = 4;
+        int remainingRight = 3;
         int choice = 0;
         Scanner s = new Scanner(System.in);
         Scanner ss = new Scanner(System.in);
         while (remainingRight != 0) {
             System.out.print("Sayi: ");
             int n = Math.abs(s.nextInt());
-            System.out.println("1: Iterative Factorial\n2: Recursive Factorial\nDefault: Exit");
+            System.out.println("1: Iterative Factorial\n2: Recursive Factorial\n3: Exit");
             choice = ss.nextInt();
             switch (choice) {
                 case 1 :
@@ -34,7 +34,7 @@ class Main {
         }
         if (remainingRight == 0)
         {
-            System.out.println("Hakkiniz doldu.");
+            System.out.println("Hakkiniz doldu, program kapandi.");
             s.close();
             ss.close();
             System.exit(0);
