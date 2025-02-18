@@ -1,7 +1,7 @@
 /*
 EXAMPLES
-Kullanicidan girilen sayinin faktöriyelini bulma
-Kullanicidan bir tamsayi alarak faktöriyelini hesaplayan iterative ve recursive metota göre Java programı
+Kullanıcıdan girilen sayının faktöriyelini bulma
+Kullanıcıdan bir tamsayı alarak faktöriyelini hesaplayan iterative ve recursive metota göre Java programı
 */
 ﻿
 import java.util.*;
