@@ -22,8 +22,8 @@ class Main {
             exit = s2.nextLine();
         }
         System.out.println("Kapattiniz");
-		    s1.close();
-		    s2.close();
-		    System.exit(0);
+	s1.close();
+	s2.close();
+	System.exit(0);
     }
 }
