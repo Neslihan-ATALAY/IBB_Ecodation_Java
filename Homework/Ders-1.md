@@ -75,4 +75,6 @@ Pom.xml bir xml dosyasıdır ve içerisinde projenin adını, paketini, versiyon
 <!-- maven plugin'leri -->
 </project>
 
-Kaynak: https://medium.com/@fatihbildirici.dev/maven-%C3%B6zellikleri-yap%C4%B1s%C4%B1-nedir-neden-kullan%C4%B1r%C4%B1z-599b469bfee3
+Kaynaklar: 
+https://medium.com/@fatihbildirici.dev/maven-%C3%B6zellikleri-yap%C4%B1s%C4%B1-nedir-neden-kullan%C4%B1r%C4%B1z-599b469bfee3
+https://www.yusufsezer.com.tr/maven/
