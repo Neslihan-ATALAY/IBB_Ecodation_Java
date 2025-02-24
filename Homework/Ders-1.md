@@ -60,7 +60,7 @@ Pom.xml bir xml dosyasıdır ve içerisinde projenin adını, paketini, versiyon
 Örnek Pom.xml dosyası:
 <project>
 <modelVersion>4.0.0</modelVersion>
-<groupId>com.yusufsezer</groupId> - Proje adı (Paket adı kullanılır genellike)
+<groupId>com.isimsoyisim</groupId> - Proje adı (Paket adı kullanılır genellike)
 <artifactId>MavenUygulamam</artifactId> - Proje adı
 <version>0.0.1-SNAPSHOT</version> - Semantic versionlama kullanmak faydalı olacaktır. (5.0.0.RELEASE - 5.0.0.FINAL) SNAPSHOT(halen geliştiriliyor.)
 <packaging>jar</packaging>
