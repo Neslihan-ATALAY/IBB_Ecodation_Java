@@ -120,3 +120,61 @@ JDK, aynı zamanda tamamlanmış bir Java Çalışma Zamanı Ortamı ile birlikt
 JDK kopyaları aynı zamanda Java API'sinin hemen hemen her kısmının nasıl kullanılacağını gösteren birçok seçilmiş örnek programı da barındırmaktadır.
 
 Kaynak: https://tr.m.wikipedia.org/wiki/Java_Geli%C5%9Ftirme_Kiti
+
+///////////////////////////////////////
+
+Java Runtime Environment (JRE)
+
+Java Runtime Environment yani JRE, birçok işletim sisteminde ve platformda kullanılan Java programlama diliyle geliştirilmiş uygulamalarının sağlıklı bir şekilde çalıştırılabilmesi için kullanılan ve Java kütüphanelerini içeren bir yazılım destek katmanıdır.
+
+Java tabanlı kurgulanan uygulamalar bu katman sayesinde birçok değişik platformlarda sorunsuz bir şekilde çalışırlar. Böylece her işletim sistemine uyumlu olması için ayrı ayrı uygulama geliştirmek zorunda kalınmamış olur. Java dili, Sun Microsystems tarafından geliştirilen açık kaynak kodlu ve nesneye yönelik bir dildir.
+
+Java’nın sloganı olan “Bir defa yaz, her yerde çalıştır” felsefesi sayesinde bu dil ile yazılmış uygulamalar farklı işletim sistemleri üzerinde JRE sayesinde sorunsuz bir şekilde çalışabilir.
+
+JRE Nasıl Çalışır?
+
+Java Runtime Environment tüm platformlarda kesintisiz Java deneyimi sağlayabilmek üzere üç bileşeni kullanarak işlev görür. Java Classloader, Byte Kodu Doğrulayıcı ve Yorumlayıcı bileşenleri sistemin çalışmasını kontrol eder.
+
+Java Classloader
+Java sınıf yükleyici olarak Türkçeye çevrilebilen Classloader, Java tabanlı programların çalışmasına olanak veren Sınıfların yüklenmesinden sorumludur. Classloader, sadece gerektiği zaman otomatik bir şekilde sınıfları yükleyerek uygulamaların çalışmasına uygun ortam sağlar. Java Classloader, derlenmiş java kodunu belleğe yükler ve kodu uygun Java sınıfının kitaplığına bağlar.
+
+Byte Kodu Doğrulayıcı
+Java kodunun doğruluğunu kontrol eden bu bileşen, kodların doğru olduğundan ya da biçiminin doğruluğundan sorumludur. Doğrulaması yapılan kodlar yüklenerek, kodların Byte yorumlayıcı tarafından yorumlamasına izin verilir.
+
+Yorumlayıcı
+Başarıyla yüklenen ve doğrulanan Byte kodlarının, yerel olarak yürütülmesini sağlar.
+
+JRE Bileşenleri Nelerdir?
+
+Java Development Kit (JDK)
+Java diliyle çalışan ve uygulama geliştiren yazılımcıların kullanabileceği Java Development Kit ya da Java Geliştirme Kiti adı verilebilen bir araçtır. Çeşitli versiyonları ve sürümleri vardır.
+Java Enterprise Edition (JEE)
+Java Special Edition (JSE)
+Java Mobile Edition (JME)
+
+Java Virtual Machine (JVM) ise canlı olarak Java uygulamalarını yürütmek için kullanılan bir araçtır. Geliştiriciler JDK ile geliştirdikleri Java tabanlı bu sanal makine üzerinde çalıştırırlar.
+
+Geliştirme Araçları
+Swing
+Swing basit bir kullanıcı arayüzüdür.  Birtakım özelleştirmeler yapmak için kullanılır. 
+
+AWT
+Abstract Window Toolkit, Düğme, nesne, kaydırma çubukları, düğme ve pencere oluşturmak için kullanılan bir GUI (Graphical User İnterface) Grafik kullanıcı arayüzüdür. 
+
+Java 2D
+Adı üstünde Java dilinde iki boyutlu 2D (2 Dimension) grafik çizebilmek için kullanılan bir APİ’dir. Bu araçla geliştiriciler çeşitli efektler, oyunlar vb geliştirebilirler. 
+
+Kitaplıklar
+JDBC API
+Java Database Connectivity API, uzak veritabanlarına bağlantı kurabilmesi, sayfalara ve dosyalara erişim sağlayan uygulamalar geliştirebilmek için  için kullanılan bir API’dir.  
+
+JNDI
+Java Naming and Directory Interface, Java istemcilerinin bir ad aracılığı ile veri nesneleri ve kaynaklarını keşfetmesine, araştırmasına imkan veren bir Java API’sidir.
+
+Java IDL
+Java IDL, dağıtık haldeki nesnelerin yani farklı platformlardaki birbiriyle iletişime giren nesneler için kullanılır. Java IDL dağıtılmış nesne modeli olan CORBA (Common Object Request Brokerage Architecture sayesinde Java IDL, nesnelerin dilden bağımsız olarak (Java, C, C+ veya başka dilde yazılmış nesnelerin) iletişime girmesine olanak tanır.
+
+Kaynak: https://www.hosting.com.tr/bilgi-bankasi/jre/
+
+///////////////////////////////////////////
+
