@@ -1,5 +1,3 @@
-
-
 MAVEN NEDİR?
 
 Maven yoğunlukla java projelerini derlemek, build (inşa) etmek ve arşiv dosyaları oluşturmak için kullanılan bir build otomasyon aracıdır. Java dışında birçok dil için de kullanılabilir olsa da (Ruby, Scala vs.) yoğunlukla Java derlemesi, proje yönetimi gibi alanlarda kullanılmaktadır. Apache vakfı tarafından geliştirilmiş, yayınlanmış ve desteklenmeye devam etmektedir. 
@@ -24,13 +22,15 @@ verify: Entegrasyon testlerinin sonuçlarının doğrulandığı fazdır, kalite
 install: Paketi yerel depoya kurmak, kullanmak ve başka projeler içinde bağımlılık olarak da göstermek için çalıştırma komutu ve fazıdır.
 deploy: Yerelde çalışan derlenen, kurulan paketi uzak repoya push etme fazıdır.
 
-Maven için gerekli olan Java kurulumunu yaptıktan ve Maven paketini indirip çalışma ortamımıza çıkardıktan ve çıkardığımız alanı da environment variable olarak tanımladıktan sonra Maven kullanmaya başlayabiliriz.
+Maven için gerekli olan Java kurulumu yapılır. Maven paketi indirilip çalışma ortamına çıkarılır ve çıkarılan alanı da environment variable olarak tanımladıktan sonra Maven kullanılmaya başlanabilir.
+
 mvn archetype:generate
         -DgroupId={project-packaging}
         -DartifactId={project-name}
         -DarchetypeArtifactId={maven-template}
         -DinteractiveMode=false
-ile bir proje yaratıp daha sonra aşağıdaki komutları kullanarak işlemlerimizi yapabiliriz, temel maven komutlarını ve açıklamalarını şöyle sıralayabiliriz;
+ile bir proje yaratıp daha sonra aşağıdaki komutları kullanarak işlemler yapılabilir, temel maven komutlarını ve açıklamalar şöyle sıralanabilir;
+
 $ mvn clean: Hedef dizini (target) silerek derlenmiş artifactı temizlemek için kullanılır.
 $ mvn compiler:compile: Java source kodlarını derlemek için kullanılır.
 $ mvn compiler:testCompile: Java source codeların içerisindeki test classlarını derlemek için kullanılır.
@@ -40,8 +40,8 @@ $ mvn install: Lokal maven klasörünün, reposunun içerisine paketi yüklemek 
 $ mvn site:site: Maven projesi için site oluşturmak ve onu lokalde görüntülemek için kullanılır.
 $ mvn test: Surefire-plugin yardımı ile proje içerisinde yazılan test caseleri çalıştırmak için kullanılır.
 $ mvn -v: Bilgisayarımızda kurulu maven versiyonunu gösterir.
-$ mvn -o: Offline modda lokalimizde çalışıp işlem yapmamızı, $mvn -q ise sadece test caselerimizi çalıştırıp sonuçlarını alabilmemizi sağlar.
-$ mvn -help: Maven komutları ile ilgili destek komutudur, komutları, açıklamalarınızı ve fazlasını bu komut ile listeleyebiliriz.
+$ mvn -o: Offline modda lokalimizde çalışıp işlem yapılmasını, $mvn -q ise sadece test caselerinin çalıştırılıp sonuçların alınabilmemisini sağlar.
+$ mvn -help: Maven komutları ile ilgili destek komutudur. Komutlar, açıklamalar ve fazlası bu komut ile listelenebilmektedir.
 
 Bazı maven işlemleri için pluginlere ihtiyaç vardır. Pluginler mavenın güçlendiricisi olmanın yanısıra yapıtaşıdır, birçok işlem pluginler ile yapılır ve merkez repository ya da üçüncü parti araçlar maven pluginleri bulundurur. Bu pluginler mavenı zenginleştirmek ve belirli işlemleri gerçekleştirmek için kritiktir. Örneğin bir war çıktısı alabilmek için maven-war-plugin kurulması gerekir ya da jetty plugin ile web geliştirmeleri daha etkili olabilir. Spring framework web geliştirmelerini derleyebilmek için spring-boot-plugin kullanmak gerekir ya da uzak repoya bir paket göndermek için maven-deploy-plugin kullanmak gerekir. Bununla birlikte farklı işlemler için kullanılması gereken birçok eklenti vardır.
 
@@ -52,3 +52,5 @@ Standartları sayesinde ortam, IDE, servis bağımsız çalışmayı sağlar ve 
 Sürüm güncellemelerini takip etmek ve özellikle bağımlılık ve alt bağımlılıkların da sürümlerini yönetmeyi takip etmek için oldukça efektiftir. 
 Sürekli derleme, sürekli entegrasyon (CI/CD) ve bu süreçlere bağlı sürekli testleri çalıştırmak için harika bir altyapı sunar, bu işlemlerin yapıldığı (Jenkins vs.) araçlar ile de pluginler, entegrasyonlar sayesinde oldukça uyumlu çalışır.
 Farklı formatlarda paketler, çıktılar oluşturmak için oldukça efektiftir.
+
+Kaynak: https://medium.com/@fatihbildirici.dev/maven-%C3%B6zellikleri-yap%C4%B1s%C4%B1-nedir-neden-kullan%C4%B1r%C4%B1z-599b469bfee3
