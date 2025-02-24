@@ -78,3 +78,45 @@ Pom.xml bir xml dosyasıdır ve içerisinde projenin adını, paketini, versiyon
 Kaynaklar: 
 https://medium.com/@fatihbildirici.dev/maven-%C3%B6zellikleri-yap%C4%B1s%C4%B1-nedir-neden-kullan%C4%B1r%C4%B1z-599b469bfee3
 https://www.yusufsezer.com.tr/maven/
+
+////////////////////////////////////////
+
+JDK (Java Development Kit) Nedir?
+
+Java Geliştirme Kiti (JDK) Java geliştiricilerine yönelik bir Oracle Corporation ürünüdür. Java'nın kullanıma sunulmasından beri en geniş kullanım alanı bulan Java SDK'dır. 17 Ekim 2006'da, Sun GNU General Public License (GPL) altında sunulacağını duyurdu ki bu özgür yazılım olacağı anlamına geliyordu. Bunun gerçekleşmesi ise 8 Mayıs 2007'de oldu; Sun kaynak kodu OpenJDK'ya bağışladı.
+
+JDK içeriği
+JDK'nın birincil bileşenleri programlama araçlarından oluşur, bunlar:
+java – Java uygulamaları için yükleyici. Bu araç bir yorumlayıcıdır ve javac derleyicisi tarafından ortaya çıkarılmış olan sınıf dosyalarını yorumlar. Şu an hem geliştirme hem de konuşlandırma için aynı başlatıcı kullanılmaktadır.
+javac – derleyici, kaynak kodu Java bytecode'a çevirir.
+Uygulamacık görüntüleyicisi (applet viewer) – Bu araç İnternet tarayıcısı kullanılmadan Java uygulamacıklarını çalıştırmak ve hata ayıklamak için kullanılır.
+apt – Java için yardımcı veri işleme aracı
+extcheck – JAR dosyası çakışmalarını fark edebilen araç
+idlj – IDL'den Java'ya çevrim sağlayan derleyici. Bu araç verilen Java IDL dosyasından Java ilişkilendirmeleri çıkarır.
+javadoc – Dokümantasyon üreticisi; otomatik olarak kaynak kod yorumlarından dokümantasyon üretir.
+jar – arşivleyici; ilgili sınıfları kütüphaneleri tek bir JAR dosyasına çevirir. Jar dosyalarını yönetmek için de kullanılır.
+javah – C başlık ve koçan üreticisi; yerel metotları yazmak için kullanılır.
+javap – sınıf dosyası ters çeviricisi
+javaws – JNLP uygulamaları için Java Ağ Başlatıcı
+jconsole – Java izleme ve yönetim konsolu
+jdb – hata ayıklayıcı
+jhat – Java Bellek Yığını Analiz Aracı (deneysel)
+jinfo – Bu araç çalışmakta olan Java sürecinden ya da daha önce çökmüş olan Java sürecine ait bir dökümden konfigürasyon bilgisini alır.
+jmap – Bu araç, Java'ya ait bellek haritasını çıkarır, verilen Java süreci ya da çökmüş bir sürece ait dökümden paylaşılan nesnelere ait bellek haritalarını veya bellek yığını ayrıntılarını çıkarabilir. (deneysel)
+jps – Java Sanal Makine Süreç Durum Aracı hedef makinedeki HotSpot Java Sanal Makineleri'ni (JVM'ler) listeler. (deneysel)
+jrunscript – Java komut satırı betiği kabuk.
+jstack – Java iş parçacıklarına ait yığıt izlerini görüntülemeyi sağlayan araç. (deneysel)
+jstat – Java Sanal Makinesi istatistik izleme aracı (deneysel)
+jstatd – jstat geri plan yordamı (deneysel)
+policytool – Direktif yaratma ve yönetme aracı; bir Java çalışma zamanı için direktifleri verir, bu şekilde farklı kaynaklara ait kodların hangi izinlere sahip olduğunu belirler.
+VisualVM – Bazı komut satırlı JDK araçlarını bir araya getiren, performans ve bellek kesiti alma görsel aracı.
+wsimport – Ağ hizmetini çağırmak için taşınabilir JAX-WS kodu üretir
+xjc – XML ilişkilendirme Java API'sinin (JAXB) bir kısmını oluşturur. Bir XML şemasını kabul eder ve Java sınıfları üretir.
+
+Deneysel araçlar, JDK'nın ileriki versiyonlarında olmayabilir.
+
+JDK, aynı zamanda tamamlanmış bir Java Çalışma Zamanı Ortamı ile birlikte gelir. Bu genellikle hususî çalışma zamanı olarak da adlandırılır, çünkü "olağan" JRE'den ayrıdır ve ilave içeriğe sahiptir. Bir Java Sanal Makinesi'nden ve konuşlandırma ortamındaki sınıf kütüphanelerinin hepsinden oluşur. Aynı zamanda geliştiricilerin işine yarayan uluslararasılaştırma kütüphaneleri ve IDL kütüphaneleri gibi ek kütüphaneleri de içermektedir.
+
+JDK kopyaları aynı zamanda Java API'sinin hemen hemen her kısmının nasıl kullanılacağını gösteren birçok seçilmiş örnek programı da barındırmaktadır.
+
+Kaynak: https://tr.m.wikipedia.org/wiki/Java_Geli%C5%9Ftirme_Kiti
