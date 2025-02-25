@@ -221,7 +221,7 @@ Genellikle yürütülebilir dosya elde edilmesi şeklinde tanımlanmasının ned
 
 Derleyicinin kullanılmasındaki amaç genellikle çalışabilir bir yazılım elde etmektir. Kullanıcıların programları kullanırken kolaylık sağlamak amaçlı geliştirilmiştir. Örneğin, şu satırı bir programın kaynak kodunda (programın okunabilir hali) düşünelim:
 
-{\displaystyle X=2+Y}{\displaystyle X=2komut
+X=2+Y
 
 Alttaki assembly'de yazılmış satırlar, aynı programın derlenmiş halidir:
 
@@ -245,3 +245,4 @@ Bir programlama dili genellikle insan tarafından okunabilir yapılardır. Bilgi
 Kaynak: https://tr.m.wikipedia.org/wiki/Derleyici
 
 /////////////////////////////////
+
