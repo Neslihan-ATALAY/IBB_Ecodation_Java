@@ -53,7 +53,7 @@ Sürüm güncellemelerini takip etmek ve özellikle bağımlılık ve alt bağı
 Sürekli derleme, sürekli entegrasyon (CI/CD) ve bu süreçlere bağlı sürekli testleri çalıştırmak için harika bir altyapı sunar, bu işlemlerin yapıldığı (Jenkins vs.) araçlar ile de pluginler, entegrasyonlar sayesinde oldukça uyumlu çalışır.
 Farklı formatlarda paketler, çıktılar oluşturmak için oldukça efektiftir.
 
-POM.XML
+POM.XML Nedir?
 
 Pom.xml bir xml dosyasıdır ve içerisinde projenin adını, paketini, versiyon bilgisini, repoların bilgisini, bağımlılıkları, o bağımlılıkların versiyonlarını içerir. Maven bir build esnasında gider Pom.xml dosyasına bakar, oradaki proje detaylarını, kütüphaneleri, bağımlılıkları ilk olarak local maven repository denilen bilgisayarda oluşturulan maven dosyası içeriğine bakar, bulabildiklerini oradan alıp projeye ekler, bulamadığı paketler ve bağımlıklar için Central Maven Repository dediğimiz mavenrepository adresine gider, oradan indirerek projeye ekler. Böylece Pom.xml içerisinde verilen tüm kütüphaneleri, bağımlılıkları içeren bir proje yapısı oluşur, ve build alındığında tüm bu çerçeveye sahip bir paket oluşur.
 
@@ -123,7 +123,7 @@ Kaynak: https://tr.m.wikipedia.org/wiki/Java_Geli%C5%9Ftirme_Kiti
 
 ///////////////////////////////////////
 
-Java Runtime Environment (JRE)
+JRE (Java Runtime Environment) Nedir?
 
 Java Runtime Environment yani JRE, birçok işletim sisteminde ve platformda kullanılan Java programlama diliyle geliştirilmiş uygulamalarının sağlıklı bir şekilde çalıştırılabilmesi için kullanılan ve Java kütüphanelerini içeren bir yazılım destek katmanıdır.
 
@@ -178,7 +178,7 @@ Kaynak: https://www.hosting.com.tr/bilgi-bankasi/jre/
 
 ///////////////////////////////////////////
 
-JVM (Java Virtual Machine)
+JVM (Java Virtual Machine) Nedir?
 
 Java Sanal Makinesi (JSM), Java platformunun nesne modülü (İng. object module) formatı olan class uzantılı sınıf dosyalarının belleğe yüklenip çalıştırılması için gereken hizmetleri sunan bir sistem programıdır ve temel görevinin sınıf dosyalarını yorumlamak olduğu söylenebilir. Ancak, JSM'ni salt bir yorumlayıcı olarak görmek büyük haksızlık olur. Zira, yorumlama ile birlikte JSM'nin şu görevleri de vardır.
 
