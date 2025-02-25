@@ -271,3 +271,103 @@ Kaynak: https://tr.m.wikipedia.org/wiki/Yorumlay%C4%B1c%C4%B1
 
 ///////////////////////////////////////
 
+Java Nedir?
+
+Java, Sun Microsystems mühendislerinden James Gosling tarafından geliştirilmeye başlanmış açık kaynak kodlu, nesneye yönelik, platform bağımsız, yüksek verimli, çok işlevli, yüksek seviye, hem yorumlanan hem de derlenen bParadigması:
+
+Paradigması: Nesne yönelimli (çok paradigmalı), yapısal, fonksiyonel, zorunlu
+İlk çıkışı: 23 Mayıs 1995 (29 yıl önce)
+Tasarımcı: James Gosling & Sun Microsystems
+Geliştirici: Oracle Corporation
+Önemli uygulamaları: OpenJDK, HotSpot ve daha fazlası
+Lehçeleri: Generic Java, Pizza
+Etkilendikleri: Ada 83, C++, Delphi Object Pascal, Eiffel, Generic Java, Mesa, Modula-3, Oberon, Objective-C, UCSD Pascal, Smalltalk
+Etkiledikleri: Ada 2005, BeanShell, C#, Clojure, D, ECMAScript, Groovy, J#, JavaScript, PHP, Python, Scala, Seed7, Vala
+Platformu: Çapraz platform
+Lisans: GNU Genel Kamu Lisansı / Java Community Process
+Olağan dosya uzantıları: .java, .class, .jar, .jmod
+Web sitesi:  https://www.oracle.com/java/technologies/
+
+Java, Sun Microsystems'den James Gosling tarafından geliştirilen bir programlama dilidir ve 1995 yılında Sun Microsystems'in çekirdek bileşeni olarak piyasaya sürülmüştür. Bu dil C ve C++'dan birçok sözdizim türetmesine rağmen bu türevler daha basit nesne modeli ve daha az düşük seviye olanaklar içerir. Java uygulamaları bilgisayar mimarisine bağlı olmadan herhangi bir Java Sanal Makinesi (Java Virtual Machine - JVM) üzerinde çalışabilen tipik bytecode'dur (sınıf dosyası).
+
+Java'nın sık kullanılan sloganlarından biri olan, çevirisi "bir defa yaz, her yerde çalıştır" olan "write once, run anywhere - WORA", Java'nın; derlenmiş Java kodunun, Java'yı destekleyen bütün platformlarda tekrar derlenmeye ihtiyacı olmadan çalışabileceğini ima eder (Platform Independent). 2016 yılında bildirilen 9 milyon geliştiricisi ile, özellikle istemci sunucu web uygulamaları için olmak üzere, kullanımda olan en popüler programlama dillerinden birisidir.
+
+Java ilk çıktığında daha çok küçük cihazlarda kullanılmak için tasarlanmış ortak bir düzlem dili olarak düşünülmüştü. Ancak düzlem bağımsızlığı özelliği ve tekbiçim kütüphane desteği C ve C++'tan çok daha üstün ve güvenli bir yazılım geliştirme ve işletme ortamı sunduğundan, hemen her yerde kullanılmaya başlanmıştır. Özellikle kurumsal alanda ve mobil cihazlarda son derece popüler olan Java özellikle J2SE 1.4 ve 5 sürümü ile masaüstü uygulamalarda da yaygınlaşmaya başlamıştır.
+
+Java'nın ilk sürümü olan Java 1.0 (1995) Java Platform 1 olarak adlandırıldı ve tasarlama amacına uygun olarak küçük boyutlu ve kısıtlı özelliklere sahipti. Daha sonra düzlemin gücü gözlendi ve tasarımında büyük değişiklikler ve eklemeler yapıldı. Bu büyük değişikliklerden dolayı geliştirilen yeni düzleme Java Platform 2 adı verildi ama sürüm numarası 2 yapılmadı, 1.2 olarak devam etti. 2004 sonbaharında çıkan Java 5, geçmiş 1.2, 1.3 ve 1.4 sürümlerinin ardından en çok gelişme ve değişikliği barındıran sürüm oldu. Java SE 8 ise Java teknolojisinin günümüz sürümüdür. 13 Kasım 2006'da Java düzlemi GPL ruhsatıyla açık kodlu hale gelmiştir.
+
+Java Tarihi:
+James Gosling ve Patrick Naughton Java projesini Haziran 1991'de başlattı. Java ilk olarak interaktif televizyonlar için tasarlandı ancak dijital kablo televizyon endüstrisi için o zamanlar çok gelişmişti. Java'nın ilk hali Oak ismini taşıyordu ve bu ismi Gosling'in ofisinin hemen yanında bulunan bir meşe ağacından almıştı. Daha sonra projenin ismi Green oldu ve en son Java adını aldı. Gosling, Java'yı C/C++'a benzer bir sözdizimi ile tasarladı ve böylece programcılar için kolaylıkla öğrenilebilen bir dil oldu.
+
+Java Sürümler:
+Mayıs 2022 itibarıyla resmî olarak Java SE 8, Java SE 11 ve Java SE 17 sürümleri uzun vadeli (LTS) olarak, Java SE 18 ise süreli bir şekilde desteklenmektedir. Java'nın ana sürümleri aşağıdaki gibidir:
+
+Versiyon	Yayın Tarihi
+JDK Beta	1995
+JDK1.0	23 Ocak 1996
+JDK 1.1	19 Şubat 1997
+J2SE 1.2	8 Aralık 1998
+J2SE 1.3	8 Mayıs 2000
+J2SE 1.4	6 Şubat 2002
+J2SE 5.0	30 Eylül 2004
+Java SE 6	11 Aralık 2006
+Java SE 7	28 Temmuz 2011
+Java SE 8 (LTS)	18 Mart 2014
+Java SE 9	21 Eylül 2017
+Java SE 10	20 Mart 2018
+Java SE 11 (LTS)	25 Eylül 2018
+Java SE 12	19 Mart 2019
+Java SE 13	17 Eylül 2019
+Java SE 14	17 Mart 2020
+Java SE 15	15 Eylül 2020
+Java SE 16	16 Mart 2021
+Java SE 17 (LTS)	14 Eylül 2021
+Java SE 18	22 Mart 2022
+Java SE 19	13 Eylül 2022
+Java SE 20	07 Haziran 2022 **
+Java SE 21 (LTS)	07 Aralık 2022 **
+Java SE 22	03 Mart 2024 **
+Çalışmaları devam etmektedir.
+LTS (Long-Term Support), "Uzun Vadeli Destek" anlamına gelir. Bir programın veya yazılımın dağıtıcısı tarafından uzun vade de desteklenecek olan sürümüdür.
+
+Java Çalışma Mantığı:
+
+Bir Java yazılımı şu şekilde geliştirilir:
+Yazılımcı Java kodunu yazar.
+Bu kod bir Java derleyicisi ile derlenir. Derleme sonucunda "bytecode" adı verilen bir tür sanal makine kodu ortaya çıkar. Platform bağımsızlığını sağlayan bytecode'dur. Çünkü bir kere bytecode oluştuktan sonra yazılım, sanal makine içeren tüm işletim sistemlerinde çalışabilmektedir.
+Bu bytecode Java Sanal Makinesi (Java Virtual Machine - JVM) tarafından işletilir. Bu aşama, her bir bytecode komutunun teker teker yorumlanması ile icra edilebileceği gibi, anında derleme (Just-in-time compilation - JIT) kullanılarak da gerçekleştirilebilir.
+
+Java Yazımı (Sözdizimi): 
+
+Sınıf temelli nesneye yönelik bir dil olan Java, yazım olarak C++ ile benzerlikler arz eder. Java'nın yanında C#, Perl, JavaScript gibi diller de aynı dil ailesine aittir. "{}" şeklinde süslü parantezler içerisindeki bloklar, ++ arttırma ve-azaltma işleçleri bu dilin belirgin özelliklerindendir.
+
+Merhaba Dünya
+ // MerhabaDünya.java
+ public class MerhabaDünya{
+     public static void main(String[] args) {
+         System.out.println("Merhaba Dünya!");
+     }
+ }
+ 
+"MerhabaDünya.java" ile "public class MerhabaDünya" bu kısımda iki isim aynı olmalıdır aksi takdirde uygulama çalıştırılamaz.
+class: Sınıf tanımlayabilmek için class ön eki şarttır.
+public: Sınıfın dışarıdan erişebilir olduğu,
+static: Sınıf tarafından paylaşıldığı,
+void: Bir değer döndürmediği anlamına gelir.
+Public ve Static'e erişim belirleyicisi (access specifier) de denir.
+Void'e dönüş tipi (return type) de denir.
+String args[]: Parantezin içinde yöntemin aldığı parametreleri belirleriz. "String" sınıf adı, "args" da parametre adıdır. "[]" ise args'ın bir dizi (array) olduğunu belirtiyor.
+"System.out.println();" ile yazımızı yazdırıyoruz ve yeni satıra geçmesini sağlıyoruz.
+Yazımızı "System.out.print("Merhaba Dunya!");" ile de yazdırabilirdik. Fakat imleç yeni satıra geçmezdi.
+Java Türkçe karakterleri (C# gibi) "değişken adlarında, sınıf adlarında" da kullanmamıza imkân tanır.
+Java'da yazdığımız yazılımları derlememiz için öncelikle sınıf adı ile aynı adı taşıyan dosya ismine sahip olmamız gerekmektedir. Yukarıdaki örnek yazılımı sınıf ismi olan "MerhabaDünya" ifadesini kullanıp uzantısı ile beraber "MerhabaDünya.java" ismi ile kaydedebiliriz. J2SDK veya benzer bir Java geliştirme ortamı kurulu sistemimizde yazılan uygulama aşağıdaki şekilde derlenebilir.
+
+javac -encoding UTF-8 MerhabaDünya.java
+javac, yazılan programı derleyerek ".class" uzantılı bir dosya üretir. ".class" sınıf dosyaları JVM'de çalışabilecek bytecode'lar içeren sınıf dosyalarıdır. Örnek uygulamayı çalıştırmak için:
+
+java MerhabaDünya
+yazabiliriz. Java komutu öncelikle sınıf yolunda "MerhabaDünya" sınıfını arayacaktır. Bulduğu takdirde "MerhabaDünya" sınıfında "main" metodunu arayacaktır. Eğer metot bulunur ise bu metot icra edilecektir.
+
+Kaynak: https://tr.m.wikipedia.org/wiki/Java
+
+///////////////////////////////
