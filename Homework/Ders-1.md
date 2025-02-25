@@ -202,6 +202,17 @@ Kaynak: https://tr.m.wikipedia.org/wiki/Java_sanal_makinesi
 
 //////////////////////////////////////
 
+JIT (Just-in-time Compilation) Nedir?
+
+JIT (just-in-time compilation; dinamik çeviri olarak da bilinir); bilgisayar kodunu çalıştırmanın bir yoludur. Yürütülmeden önce bir program yürütülürken çalışma zamanında derleyici içerir. Genellikle bu, kaynak kodu ve daha sonradan makine diline bytecode kod çevirisini içerir ve bu kod doğrudan doğruya çalıştırılır. Bir JIT derleyicisi uygulayan bir sistem genellikle yürütülen kodu sürekli olarak analiz eder, daha sonra derleme veya tekrar derlemeden elde edilen hızlanmanın bu kodun derlenmesinin yükünden daha ağır olacağı kod bölümlerini tanımlar.
+
+Dinamik derleme türleri, kodun çalışma anında derlenmesini içerir ve JIT bu tür dinamik derlemenin bir örneğidir.
+JIT derlemesi, makine koduna çevirı için iki geleneksel yaklaşımın birleşimidir - zamanında hazırlama derlemesi (AOT derlemesi) ve yorumlayıcı. Her ikisini de bazı avantaj ve dezavantajlarını birleştirir. Kabaca, JIT derlemesi, yorumlayıcı esnekliği ile derlenmiş kodun hızını, bir yorumlayıcının yükü ve derlemenin ilave yükü ile birleştirir. JIT derlemesi dinamik derlemenin bir biçimidir ve dinamik yeniden derleme gibi uyarlanabilir optimizasyona izin verir. Bu nedenle teori olarak JIT derlemesi statik derlemeden daha hızlı yürütülebilir. Yorumlama ve JIT derleme, çalışma zamanı sistemi geç veri türlerini işleyebileceğinden ve güvenlik garantilerini uygulayabildiğinden dinamik programlama dilleri için özellikle uygundur.
+
+Kaynak: https://tr.m.wikipedia.org/w/index.php?title=JIT&wprov=rarw1
+
+/////////////////////////////////
+
 Derleyici (Compiler) Nedir?
 
 Derleyici, kaynak kodu makine koduna dönüştüren yazılımdır. Bir programlama dilinin derleyicisi, o programlama dili kullanılarak yazılmış olan kodu hedef işlemci mimarisine göre uygun şekilde makine koduna derler ve genellikle çıktı olarak yürütülebilir dosyanın (executable file) oluşturulmasını sağlar. Bu eyleme derleme denir. Bir başka ifadeyle derleyici, bir tür yazı işleyicidir; girdi olarak yazı alır ve çıktı olarak yazı verir.
