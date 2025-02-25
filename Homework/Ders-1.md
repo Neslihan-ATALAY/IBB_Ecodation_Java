@@ -200,7 +200,7 @@ JSM'nin değineceğimiz son özelliği, programcıların daha hızlı kod geliş
 
 Kaynak: https://tr.m.wikipedia.org/wiki/Java_sanal_makinesi
 
-////////////////////////////
+//////////////////////////////////////
 
 Derleyici (Compiler) Nedir?
 
@@ -244,5 +244,17 @@ Bir programlama dili genellikle insan tarafından okunabilir yapılardır. Bilgi
 
 Kaynak: https://tr.m.wikipedia.org/wiki/Derleyici
 
-/////////////////////////////////
+///////////////////////////////////////
+
+Yorumlayıcı (interpreter), yazılımı kısım kısım ele alarak doğrudan çalıştırır. Yorumlayıcılar standart bir çalıştırılabilir kod üretmezler. Yorumlama işlemi aşama aşama yapılmadığı için genellikle ilk hatanın bulunduğu yerde programın çalışması kesilir.
+
+Derleyicilerin tersine kodun işlenmeyen satırları üzerinden hiç geçilmez ve buralardaki hatalar ile ilgilenilmez.
+
+Yorumlayıcılar genelde kaynak koddan, makine diline anlık olarak dönüşüm yaptıkları için, derleyicilere göre daha yavaş çalışırlar. Ayrıca kodu iyileştirme (optimizasyon) imkânı da çoğu zaman yoktur.
+
+Yorumlayıcılar, tasarımları itibarıyla, derleyicilere benzer veri yapılarını kullanırlar. Örneğin kelime analizi (lexical analysis) için sembol tablolarından veya sözdizim analizi için (syntactic analysis) BNF tanımlarından faydalanabilirler.
+
+Kaynak: https://tr.m.wikipedia.org/wiki/Yorumlay%C4%B1c%C4%B1
+
+///////////////////////////////////////
 
