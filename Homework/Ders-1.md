@@ -273,7 +273,7 @@ Kaynak: https://tr.m.wikipedia.org/wiki/Yorumlay%C4%B1c%C4%B1
 
 Java Nedir?
 
-Java, Sun Microsystems mühendislerinden James Gosling tarafından geliştirilmeye başlanmış açık kaynak kodlu, nesneye yönelik, platform bağımsız, yüksek verimli, çok işlevli, yüksek seviye, hem yorumlanan hem de derlenen bParadigması:
+Java, Sun Microsystems mühendislerinden James Gosling tarafından geliştirilmeye başlanmış açık kaynak kodlu, nesneye yönelik, platform bağımsız, yüksek verimli, çok işlevli, yüksek seviye, hem yorumlanan hem de derlenen bir dildir.
 
 Paradigması: Nesne yönelimli (çok paradigmalı), yapısal, fonksiyonel, zorunlu
 İlk çıkışı: 23 Mayıs 1995 (29 yıl önce)
