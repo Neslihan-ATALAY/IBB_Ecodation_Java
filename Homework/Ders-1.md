@@ -246,6 +246,8 @@ Kaynak: https://tr.m.wikipedia.org/wiki/Derleyici
 
 ///////////////////////////////////////
 
+Yorumlayıcı (Interpreter) Nedir?
+
 Yorumlayıcı (interpreter), yazılımı kısım kısım ele alarak doğrudan çalıştırır. Yorumlayıcılar standart bir çalıştırılabilir kod üretmezler. Yorumlama işlemi aşama aşama yapılmadığı için genellikle ilk hatanın bulunduğu yerde programın çalışması kesilir.
 
 Derleyicilerin tersine kodun işlenmeyen satırları üzerinden hiç geçilmez ve buralardaki hatalar ile ilgilenilmez.
