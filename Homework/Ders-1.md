@@ -194,10 +194,54 @@ Bütün bu koşutluklara karşın, sınıf dosyası formatı diğer nesne modül
 
 Bir diğer farklılık, JSM'nin ve sınıf dosyası formatının baştan itibaren güvenlik düşünülerek tasarlanmış olmasından kaynaklanır. Dosyanın üstbilgisi ve içeriği arasındaki tutarlılığın denetimi ile başlayan denetimleri kod bölümlerindeki Bytecode komutlarının geçerliliği ve doğruluğu denetlenerek yapılan denetimler izler. Örneğin, sınıf dosyasının ilk dört sekizlisinde sınıf dosyası formatınca öngörülen 0xCAFEBABE değerinin olup olmadığı, altalan ve metotlara dair üstbilgilerin dosya içeriğindeki durumla uyuşup uyuşmadığı kontrol edilir; sıçrama komutlarının içinde bulunulan metodun sınırları dışına çıkmadığı veya tanımlayıcılara tür uyumlu değerler sağlandığı garanti edilir.
 
-Sınıf dosyalarının kod içeriğini oluşturan Bytecode'un yüksek düzey kavramlara yönelik özellikler taşıyan bir ara dil olması, bu dili bildik makine kodu dillerinden farklı kılar. Örneğin, Bytecode dilinde nesne yaratmak amacıyla kullanılabilecek komutların yanı sıra çokbiçimliliğin gerçekleştiriminin temelindeki dinamik iletimi olanaklı kılan komutlar da vardır; ayrıca, yazılım güvenilirliğini sağlamakta yararlanılabilecek ayrıksı durum kotarımı ile ilgili komutlar da JSM için derleyici yazmak isteyen programcıların işini kolaylaştırır. Makine dillerince doğrudan desteklenmeyen bu tür komutların varlığı, diğer türden nesne modülleri fiziksel olarak var olan bir makine üzerinde yorumlanarak çalıştırılırken, sınıf dosyalarının Bytecode dilinden haberdar olan bir soyut makine üzerinde yorumlanarak çalıştırılması gerekliliğini doğurur.[2] Bunun beklenen bir sonucu olarak, yüksek düzey bir dilin doğrudan yorumlanmasına oranla daha hızlı olmasına karşın, sınıf dosyalarının çalışma hızı diğer nesne modüllerinden daha yavaş olacaktır. İşte tam bu noktada, JSM gerçekleştirimleri çalıştırılmakta olan kodun anında derlenmesini yaparak çalışma hızını yükseltmeye çalışırlar.
+Sınıf dosyalarının kod içeriğini oluşturan Bytecode'un yüksek düzey kavramlara yönelik özellikler taşıyan bir ara dil olması, bu dili bildik makine kodu dillerinden farklı kılar. Örneğin, Bytecode dilinde nesne yaratmak amacıyla kullanılabilecek komutların yanı sıra çokbiçimliliğin gerçekleştiriminin temelindeki dinamik iletimi olanaklı kılan komutlar da vardır; ayrıca, yazılım güvenilirliğini sağlamakta yararlanılabilecek ayrıksı durum kotarımı ile ilgili komutlar da JSM için derleyici yazmak isteyen programcıların işini kolaylaştırır. Makine dillerince doğrudan desteklenmeyen bu tür komutların varlığı, diğer türden nesne modülleri fiziksel olarak var olan bir makine üzerinde yorumlanarak çalıştırılırken, sınıf dosyalarının Bytecode dilinden haberdar olan bir soyut makine üzerinde yorumlanarak çalıştırılması gerekliliğini doğurur. Bunun beklenen bir sonucu olarak, yüksek düzey bir dilin doğrudan yorumlanmasına oranla daha hızlı olmasına karşın, sınıf dosyalarının çalışma hızı diğer nesne modüllerinden daha yavaş olacaktır. İşte tam bu noktada, JSM gerçekleştirimleri çalıştırılmakta olan kodun anında derlenmesini yaparak çalışma hızını yükseltmeye çalışırlar.
 
 JSM'nin değineceğimiz son özelliği, programcıların daha hızlı kod geliştirmelerine olanak tanıyan çöp toplama birimidir. JSM'nin bir parçası olarak gerçekleştirilen çöp toplayıcı, yığın bellekte kullanılmaz hale gelen bölgelerin geriye döndürülmesini sağlar. Böylece, yığın belleğin yönetiminden azat edilmiş olan programcılar, zamanlarını çözmek istedikleri soruna harcayacak ve daha kısa sürede daha sağlıklı bir kodun gerçekleştirilmesi mümkün olacaktır.
 
 Kaynak: https://tr.m.wikipedia.org/wiki/Java_sanal_makinesi
 
 ////////////////////////////
+
+Derleyici (Compiler) Nedir?
+
+Derleyici, kaynak kodu makine koduna dönüştüren yazılımdır. Bir programlama dilinin derleyicisi, o programlama dili kullanılarak yazılmış olan kodu hedef işlemci mimarisine göre uygun şekilde makine koduna derler ve genellikle çıktı olarak yürütülebilir dosyanın (executable file) oluşturulmasını sağlar. Bu eyleme derleme denir. Bir başka ifadeyle derleyici, bir tür yazı işleyicidir; girdi olarak yazı alır ve çıktı olarak yazı verir.
+
+Çok dilli, çok hedefli bir derleyici diyagramı
+Bilgi işlemde, yürütülebilir dosya doğrudan işlemci tarafından çalıştırılabilecek bir dosyayı ifade eder. Dosya makine kodu ile yazılmış komut seti talimatları bütününden oluşur.
+
+Derleyiciler çalışma prensiplerine göre ayrılır. Bir derleyici, yorumlayıcı ve assembler'de olduğu gibi sözcüksel analiz (lexical analysis) ve ayrıştırma (parsing) aşamalarını gerçekleştirir.
+
+Derleyicilerin ürettiği yürütülebilir dosyalar her zaman platforma özel olarak derlenmiş makine kodlarından oluşmaz, bazen kaynak kod bir ara temsil diline (intermediate representation) derlenir ve bu dil genellikle bytecode'lardan oluşur ve sanal bir makinede çalıştırılır. Ara dillerin bilinen örnekleri Microsoft .NET, Java Sanal Makinesi ve BEAM (Erlang Virtual Machine) şeklindedir. Bu platformlar kendilerine özgü bir ara dil kullanır. Örneğin JVM, Java Bytecode olarak adlandırılan bir ara dil kullanmaktadır. Bu şekilde derlenen diller tam zamanında derleme (Just in Time – JIT) tekniğini kullanır.
+
+İki ana derleyici türü vardır, bunlar: yerel (native) ve çapraz (cross) derleyicilerdir. Yerel derleyiciler üzerinde çalıştığı platforma özgü derleme gerçekleştirir. Yerel bir derleyiciden elde edilecek çıktı yalnızca derleyicinin derleme zamanında yürütüldüğü sisteme yönelik olacaktır (Örn. Yerel bir derleyici ile C kodunun AMD64 mimarisini kullanan Linux çekirdeğinde çalışan bir makinede derlenmesi sonucu AMD64 ve Linux çekirdeğiyle uyumlu makine kodu elde edilmesi). Yerel derleyicilerin platform bağımsız düşünmeleri gerekmediğinden AOT derleme tekniği ile direkt olarak makine koduna derlenirler. Çapraz derleyiciler üzerinde çalıştıkları platformdan bağımsız bir şekilde destekledikleri tüm platformlara özel olarak makine kodu derlemeleri üretebilirler. Buna örnek olarak ARM64 üzerinde çalışan bir derleyicinin I386 için uyumlu makine kodu derlemesi gösterilebilir. Derleyici yalnızca kodu derlemekle ilgilenmez, aynı zamanda derleme zamanında gerekli gördüğü yerlerde kodu optimize edebilir ve daha optimum bir makine kodu üretmek için çabalayabilir. Buna derleyici optimizasyonu denir.
+
+Makine üzerinde bulunan işlemcinin komut setine uygun şekilde derlenen saf makine kodlarının işlemci tarafından doğrudan yürütülebilir olduğundan en saf çalışma performansı bu şekilde derlenen dillerden elde edilebilir. Bu diller zamanından önce (Ahead of Time - AOT) derleme tekniğini kullanır.
+
+Genellikle yürütülebilir dosya elde edilmesi şeklinde tanımlanmasının nedeni ise bir derleyicinin her zaman tam anlamıyla yürütülebilir dosya oluşturmamasından kaynaklanmaktadır.
+
+Derleyicinin kullanılmasındaki amaç genellikle çalışabilir bir yazılım elde etmektir. Kullanıcıların programları kullanırken kolaylık sağlamak amaçlı geliştirilmiştir. Örneğin, şu satırı bir programın kaynak kodunda (programın okunabilir hali) düşünelim:
+
+{\displaystyle X=2+Y}{\displaystyle X=2komut
+
+Alttaki assembly'de yazılmış satırlar, aynı programın derlenmiş halidir:
+
+ LOAD A [0]   ;; belleğin 0 adresindeki veriyi A yazmacına yükle
+ ADD  A BX    ;; A yazmacına BX yazmacının adresinde bulunan veriyi ekle
+ STOR A [100] ;; sonucu 100 adresine yaz
+ 
+Bu örnekte assembly'nin hedefi, programcının anladığı kaynak kodundan işlemcinin anladığı 0 ile 1 den oluşan makine dili kodunu üretmek (LOAD, ADD ve STOR komutları 0001, 0011 ve 0010 olarak yorumlanır)
+
+ 0001 01 00 00000000
+ 0011 01 10 00000010
+ 0010 01 00 00000100
+ ---- -- -- ---------
+  |   |  |   |_________bellek adresi
+  |   |  |____________işaret   
+  |   |______________yazmaç
+  |_________________komut
+  
+Bir programlama dili genellikle insan tarafından okunabilir yapılardır. Bilgisayarlar komut seti içerisinde yer alan talimatlar dışında herhangi bir komut yorumlama yeteneğine sahip değillerdir. İşlemcilerin mimarisine göre komut seti de farklılık gösterir, bu nedenle derleyicilerin desteklenen her farklı işlemci mimarisi için farklı derleme aşamalarını izlemesi ve farklı makine kodu sonuçları üretmesi gerekir.
+
+Kaynak: https://tr.m.wikipedia.org/wiki/Derleyici
+
+/////////////////////////////////
