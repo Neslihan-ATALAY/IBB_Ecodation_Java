@@ -74,7 +74,7 @@ JAVADA ESCAPE SEQUENCE KULLANIMI
 "\b" İmleci önceki satırın son sütununa taşır.
 "\r" Satırın ilk sütununu taşımaya yarar.
 "\f" Sonraki sayfayı başlatmaya yarar.
-"\\" Metinin sonuna veya başına “ “ işareti koymaya yarar.
+"\\" Metne \ işareti koymaya yarar.
 \' Ekrana  ‘ (tek tırnak) işaretini koymamıza yarar.
 \" Ekrana  “ (çift tırnak) koymamıza yarar.
 
