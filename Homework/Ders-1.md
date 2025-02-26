@@ -478,9 +478,12 @@ Referans Veri Tipleri (Reference Data Types)
 
 Referans veri tipleri, bellekte bir nesnenin referansını saklar, bu nedenle veri türünün kendisi için sabit bir boyut yoktur. Ancak bu referanslar nesneleri işaret ettiği için, bellekteki nesnelerin büyüklüğü bu nesnelerin türüne ve içerdikleri veriye bağlıdır.
 
-Örneğin, bir String nesnesi metin verisi içerdiğinden ve bu veri boyutu değişebileceğinden, String türündeki bir referansın kendisi sabit bir boyuta sahiptir, ancak içerdiği verinin boyutu değişebilir.
+Bir String nesnesi metin verisi içerdiğinden ve bu veri boyutu değişebileceğinden, String türündeki bir referansın kendisi sabit bir boyuta sahiptir, ancak içerdiği verinin boyutu değişebilir.
 
-Kaynak: https://ders.codingbytime.com/java-veri-tipleri/
+String, dizi (array) ve sınıf nesnesi (ArrayList) gibi referans veri tipleri bulunmaktadır. Bu tipler, nesneleri işaret etmek veya daha karmaşık veri yapılarını temsil etmek için kullanılmaktadır.
+
+Kaynak: http://ders.codingbytime.com/java-veri-tipleri/
 
 /////////////////////////////////////
+
 
