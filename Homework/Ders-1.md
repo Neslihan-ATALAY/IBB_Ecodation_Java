@@ -371,3 +371,57 @@ yazabiliriz. Java komutu öncelikle sınıf yolunda "MerhabaDünya" sınıfını
 Kaynak: https://tr.m.wikipedia.org/wiki/Java
 
 ///////////////////////////////
+
+Java'nın Özellikleri
+
+Java Giriş
+
+Java, Sun Microsystems ilk olarak 1995 yılında piyasaya sürdüğü bir programlama dili ve bilgi işlem platformudur. Taşınabilir olacak şekilde tasarlanmış, sınıf tabanlı, nesne yönelimli bir dildir, yani Java kodu çok çeşitli donanım ve işletim sistemlerinde çalışabilir. Java, kurumsal düzeyde uygulamalar, mobil uygulamalar, video oyunları ve diğer yazılım türleri geliştirmek için yaygın olarak kullanılır. Java kodu, Java Sanal Makinesini ( JVM) destekleyen herhangi bir platformda çalışacak şekilde derlenebildiğinden, "bir kez yaz, her yerde çalıştır" felsefesiyle bilinir. Ayrıca Java, geliştiriciler için zengin kitaplıklar ve çerçeveler içeren geniş ve aktif bir ekosisteme sahiptir.
+
+Java, bellek yönetimi ve otomatik özel durum işleme gibi özelliklerle sıfırdan güvenli olacak şekilde tasarlandığından, güvenlik özellikleriyle de bilinir. Java'nın "çöp toplayıcı" olarak adlandırılan bellek yönetimi özelliği, artık kullanılmayan belleği otomatik olarak boşaltarak bellek sızıntısı olasılığını azaltır. Otomatik özel durum işleme özelliği, geliştiricilerin beklenmeyen hataları işleyebilecek sağlam kodlar yazmasını kolaylaştırır.
+
+Java bir diğer önemli özelliği de, birden çok yürütme iş parçacığının tek bir program içinde aynı anda çalışmasına izin veren çoklu okuma desteğidir. Bu, kullanıcı programla etkileşim halindeyken bir arka plan görevi çalıştırmak gibi çeşitli görevleri aynı anda gerçekleştirmeyi mümkün kılar. Genel olarak Java, endüstride, açık kaynak kodlu ve akademide yaygın olarak kullanılan güçlü, çok yönlü ve olgun bir programlama dilidir. Taşınabilirliği, güvenliği ve performansı onu çeşitli projeler için mükemmel bir seçim haline getiriyor.
+
+Java Terminolojisi
+
+Java programlama diliyle ilişkili birkaç anahtar terim ve kavram vardır:
+
+Class: Sınıf, nesneler oluşturmak için bir şablon veya plandır. Nesnenin özelliklerini ve yöntemlerini tanımlar.
+Object: Bir sınıfın örneği. Nesneler, sınıf tarafından tanımlanan özelliklere ve yöntemlere sahiptir.
+Method: Belirli bir görevi gerçekleştirmek için bir nesne üzerinde çağrılabilen bir işlev veya yordam.
+Inheritance: Bir sınıfın, özellikleri ve yöntemleri bir üst sınıftan miras alma yeteneği. Bu, kodun yeniden kullanılmasına ve daha özel sınıfların oluşturulmasına izin verir.
+Interface: Bir sınıfın uygulaması gereken bir dizi yöntem. Arayüzler, izlenecek bir kurs için bir sözleşme tanımlamak için kullanılır.
+Package: İlgili sınıfların ve arayüzlerin bir gruplaması. Paketler, kodu düzenlemek ve adlandırma çakışmalarını önlemek için kullanılır.
+JRE ( Java Runtime Environment): Java uygulamalarının çalıştığı yazılım ortamı. JVM ve bir dizi kitaplığı ve diğer dosyaları içerir.
+JDK ( Java Development Kit): JRE, bir derleyici ve diğer araçlar dahil olmak üzere Java uygulamaları geliştirmek için bir dizi araç.
+JIT (Just-In-Time) Compiler: Çalışma zamanında Java bayt kodunu makine koduna derleyen bir JVM özelliği. Bu, Java uygulamalarının performansını artırır.
+Garbage Collection: Artık bir program tarafından kullanılmayan belleği otomatik olarak boşaltan bir JVM özelliği. Bu, bellek sızıntılarını ve bellekle ilgili diğer sorunları önlemeye yardımcı olur.
+
+Java Birincil/Ana Özellikleri
+
+Java, geliştiricilerin çeşitli uygulamalar oluşturmak için geniş çapta benimsediği popüler, genel amaçlı bir programlama dilidir. Java geliştiriciler için mükemmel bir seçim yapan temel özelliklerinden bazıları şunlardır:
+
+Nesne Yönelimli Programlama : Java, sınıf tabanlı, nesne yönelimli bir programlama dilidir, yani nesneler, sınıflar ve kalıtım kavramlarına dayanır. Bu, diğer geliştiriciler tarafından kolayca anlaşılabilen ve korunabilen modüler, yeniden kullanılabilir kod oluşturmayı kolaylaştırır.
+
+Platform Bağımsızlığı : Java kodu, bayt kodu adı verilen ve Java Virtual Machine ( JVM) kurulu olan herhangi bir platformda çalıştırılabilen bir ara biçimde derlenir. "Bir kez yaz, her yerde çalıştır" ( WORA) olarak bilinen bu özellik, geliştiricilerin herhangi bir değişiklik yapmadan kodu bir kez yazıp birden çok platformda çalıştırmasına olanak tanır.
+
+Bellek Yönetimi : Java'nın otomatik bellek yönetimi ve çöp toplama özellikleri, bir programın artık kullanılmayan belleğini boşaltarak bellek sızıntılarını ve bellekle ilgili diğer sorunları önlemeye yardımcı olur. Bu, geliştiricilerin beklenmeyen hataları işleyebilen sağlam kodlar yazmasını kolaylaştırır.
+
+Multithreading : Java'nın multithreading desteği, birden çok yürütme dizisinin tek bir program içinde aynı anda çalışmasına izin verir. Bu, kullanıcı programla etkileşim halindeyken bir arka plan görevi çalıştırmak gibi aynı anda birden çok görevi gerçekleştirmeyi mümkün kılar.
+
+İstisna İşleme : Java'nın yerleşik istisna işleme mekanizması, geliştiricilerin kodlarındaki hataları ve istisnaları işlemesini kolaylaştırır. Bu özellik, geliştiricilerin daha sağlam ve güvenilir kod yazmasını sağlar.
+
+Güvenlik : Java, güvenilmeyen kodu sistemin geri kalanından yalıtan Java sandbox ve bir Java uygulamasında güvenlik ilkelerini uygulayan Güvenlik Yöneticisi gibi özelliklerle sıfırdan güvenli olacak şekilde tasarlanmıştır.
+
+API ve Kitaplıklar : Java, geliştiricilere çok çeşitli işlevler sağlayan zengin bir API'ye ve geniş açık kaynak kitaplıklara sahiptir. Bu kitaplıklar ve çerçeveler, geliştiricilerin bir veritabanına bağlanma, XML işleme ve daha fazlası gibi ortak görevleri gerçekleştirmesini kolaylaştırır.
+
+Topluluk ve Ekosistem : Java, geniş ve aktif bir geliştirici topluluğuna sahiptir; bu, geliştiricilerin dili öğrenmesine ve kullanmasına yardımcı olacak çok sayıda kaynak, öğretici ve forum olduğu anlamına gelir. Ek olarak, aktif ekosistem, geliştiricilerin uygulamalarını oluşturmak için kullanabilecekleri çeşitli çerçeveler ve kitaplıklar içerir.
+
+Tüm bu özellikler, Java endüstride, açık kaynak kodlu ve akademide yaygın olarak kullanılan güçlü, çok yönlü ve olgun bir programlama dili yapar. Taşınabilirliği, güvenliği ve performansı onu çeşitli projeler için mükemmel bir seçim haline getiriyor.
+
+Java ne için kullanılır?
+
+Java, çeşitli yazılım uygulamaları oluşturmak için yaygın olarak kullanılan evrensel bir programlama dilidir. Müşteri ilişkileri yönetimi sistemleri , kurumsal kaynak planlama sistemleri ve tedarik zinciri yönetim sistemleri gibi kurumsal düzeyde uygulamalar geliştirmek için yaygın olarak kullanılır. Ayrıca android mobil uygulamaları, web uygulamaları, web sunucuları ve uygulama sunucuları, oyunlar, bilimsel uygulamalar, finansal uygulamalar ve daha fazlasını geliştirmek için kullanılır. Ek olarak, Java'nın geniş kitaplıkları ve çerçeveleri, geliştiricilerin veritabanlarıyla etkileşim kurabilen, XML'i işleyebilen ve diğer genel görevleri gerçekleştirebilen uygulamalar oluşturmasını kolaylaştırır.
+
+Kaynak: https://appmaster.io/tr/blog/java-tanimi-anlami-ozellikler-nedir
+
