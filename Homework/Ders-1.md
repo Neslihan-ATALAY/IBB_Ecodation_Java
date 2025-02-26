@@ -425,3 +425,37 @@ Java, çeşitli yazılım uygulamaları oluşturmak için yaygın olarak kullan�
 
 Kaynak: https://appmaster.io/tr/blog/java-tanimi-anlami-ozellikler-nedir
 
+///////////////////////////////////////
+
+Java Veri Tipleri
+
+Değişkenler tüm programlama dillerinde kullanılan bir yapı olup, kodlamanın temel yapısını oluşturmaktadır.Değişkenler programlamada geçici bilgileri tuttuğumuz yapılardır ve yazılımcı tarafından belirlenir.Değişkenler sayesinde program içinde yaptığımız işlemleri hafıza da tutar ve gerektiği yerlerde kullanırız. 
+
+Değişkenlerin 4 özelliği bulunur; Veri Türü, İsim, Değer ve Adres.
+
+Değişkenlerde Veri Türü, adından da anlaşılacağı üzere verinin saklanacağı türünü belirtmektedir bunlar sayılar, sözcükler ve programatik alanlar olabilir. Her değişkenin program içinde kullanıldığı ve çağrıldığı benzersiz bir ismi vardır. Bu değişkenlere birde değer atarız, işletim sistemimizde bu değişkeni hafızada tutar ve bir adres belirler.
+
+Java Değişken Tanımlama ve Kullanımı
+
+int sayi = 100; komutu ile sayi isminde türü int ve değeri 100 olan bir değişken tanımlanmıştır. Bu değişkenin hafızada nerede tutulduğu ise işletim sistemi tarafından belirlenir.
+
+Java Değişken Tanımlama Yazım Kuralı (Syntax)
+
+Java'da değişken tanımlamanın kuralı şu şekildedir,
+veriTipi değişkenİsmi = değişkenDeğeri;
+
+İlk önce değişkenin veri tipini ve değişkenin ismini yazarız ve aynı matematikteki gibi "=" eşittir ile değerini atarız.
+
+Java Veri Tipleri
+
+Java'da değişken tanımlamak için belirlenmiş veri tipleri mevcuttur. Java Veri Tipleri Nelerdir?
+
+Tam Sayılar: ​Byte, Short, Integer, Long
+Ondalıklı Sayılar: Float, Double
+Karakterler: Char
+Mantıksal Değerler: Boolean
+
+Kaynak: https://kodlamavakti.com/java/degiskenler-ve-veri-tipleri/
+
+///////////////////////////////////////
+
