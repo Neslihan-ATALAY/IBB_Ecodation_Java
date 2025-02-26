@@ -67,3 +67,18 @@ Kaynak: https://ilaydakosar.com/stack-ve-heap-kavramlari/
 
 ////////////////////////////
 
+JAVADA ESCAPE SEQUENCE KULLANIMI
+
+"\n" Ekrana gelecek görüntünün bir satır aşağıya inmesini sağlar.
+"\t" Ekrana gelecek görüntüyü sekiz karakter sağa götürür.
+"\b" İmleci önceki satırın son sütununa taşır.
+"\r" Satırın ilk sütununu taşımaya yarar.
+"\f" Sonraki sayfayı başlatmaya yarar.
+"\\" Metinin sonuna veya başına “ “ işareti koymaya yarar.
+\' Ekrana  ‘ (tek tırnak) işaretini koymamıza yarar.
+\" Ekrana  “ (çift tırnak) koymamıza yarar.
+
+Kaynak: https://www.dijitalders.com/icerik/44/2763/java_escape_sequence_kullanimlari.html
+
+/////////////////////////////
+
