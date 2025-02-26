@@ -53,7 +53,7 @@ Sürüm güncellemelerini takip etmek ve özellikle bağımlılık ve alt bağı
 Sürekli derleme, sürekli entegrasyon (CI/CD) ve bu süreçlere bağlı sürekli testleri çalıştırmak için harika bir altyapı sunar, bu işlemlerin yapıldığı (Jenkins vs.) araçlar ile de pluginler, entegrasyonlar sayesinde oldukça uyumlu çalışır.
 Farklı formatlarda paketler, çıktılar oluşturmak için oldukça efektiftir.
 
-POM.XML Nedir?
+POM.XML NEDİR?
 
 Pom.xml bir xml dosyasıdır ve içerisinde projenin adını, paketini, versiyon bilgisini, repoların bilgisini, bağımlılıkları, o bağımlılıkların versiyonlarını içerir. Maven bir build esnasında gider Pom.xml dosyasına bakar, oradaki proje detaylarını, kütüphaneleri, bağımlılıkları ilk olarak local maven repository denilen bilgisayarda oluşturulan maven dosyası içeriğine bakar, bulabildiklerini oradan alıp projeye ekler, bulamadığı paketler ve bağımlıklar için Central Maven Repository dediğimiz mavenrepository adresine gider, oradan indirerek projeye ekler. Böylece Pom.xml içerisinde verilen tüm kütüphaneleri, bağımlılıkları içeren bir proje yapısı oluşur, ve build alındığında tüm bu çerçeveye sahip bir paket oluşur.
 
@@ -81,7 +81,7 @@ https://www.yusufsezer.com.tr/maven/
 
 ////////////////////////////////////////
 
-JDK (Java Development Kit) Nedir?
+JDK (Java Development Kit) NEDİR?
 
 Java Geliştirme Kiti (JDK) Java geliştiricilerine yönelik bir Oracle Corporation ürünüdür. Java'nın kullanıma sunulmasından beri en geniş kullanım alanı bulan Java SDK'dır. 17 Ekim 2006'da, Sun GNU General Public License (GPL) altında sunulacağını duyurdu ki bu özgür yazılım olacağı anlamına geliyordu. Bunun gerçekleşmesi ise 8 Mayıs 2007'de oldu; Sun kaynak kodu OpenJDK'ya bağışladı.
 
@@ -123,7 +123,7 @@ Kaynak: https://tr.m.wikipedia.org/wiki/Java_Geli%C5%9Ftirme_Kiti
 
 ///////////////////////////////////////
 
-JRE (Java Runtime Environment) Nedir?
+JRE (Java Runtime Environment) NEDİR?
 
 Java Runtime Environment yani JRE, birçok işletim sisteminde ve platformda kullanılan Java programlama diliyle geliştirilmiş uygulamalarının sağlıklı bir şekilde çalıştırılabilmesi için kullanılan ve Java kütüphanelerini içeren bir yazılım destek katmanıdır.
 
@@ -178,7 +178,7 @@ Kaynak: https://www.hosting.com.tr/bilgi-bankasi/jre/
 
 ///////////////////////////////////////////
 
-JVM (Java Virtual Machine) Nedir?
+JVM (Java Virtual Machine) NEDİR?
 
 Java Sanal Makinesi (JSM), Java platformunun nesne modülü (İng. object module) formatı olan class uzantılı sınıf dosyalarının belleğe yüklenip çalıştırılması için gereken hizmetleri sunan bir sistem programıdır ve temel görevinin sınıf dosyalarını yorumlamak olduğu söylenebilir. Ancak, JSM'ni salt bir yorumlayıcı olarak görmek büyük haksızlık olur. Zira, yorumlama ile birlikte JSM'nin şu görevleri de vardır.
 
@@ -202,7 +202,7 @@ Kaynak: https://tr.m.wikipedia.org/wiki/Java_sanal_makinesi
 
 //////////////////////////////////////
 
-JIT (Just-in-time Compilation) Nedir?
+JIT (Just-in-time Compilation) NEDİR?
 
 JIT (just-in-time compilation; dinamik çeviri olarak da bilinir); bilgisayar kodunu çalıştırmanın bir yoludur. Yürütülmeden önce bir program yürütülürken çalışma zamanında derleyici içerir. Genellikle bu, kaynak kodu ve daha sonradan makine diline bytecode kod çevirisini içerir ve bu kod doğrudan doğruya çalıştırılır. Bir JIT derleyicisi uygulayan bir sistem genellikle yürütülen kodu sürekli olarak analiz eder, daha sonra derleme veya tekrar derlemeden elde edilen hızlanmanın bu kodun derlenmesinin yükünden daha ağır olacağı kod bölümlerini tanımlar.
 
@@ -213,7 +213,7 @@ Kaynak: https://tr.m.wikipedia.org/w/index.php?title=JIT&wprov=rarw1
 
 /////////////////////////////////
 
-Derleyici (Compiler) Nedir?
+DERLEYİCİ (COMPILER) NEDİR?
 
 Derleyici, kaynak kodu makine koduna dönüştüren yazılımdır. Bir programlama dilinin derleyicisi, o programlama dili kullanılarak yazılmış olan kodu hedef işlemci mimarisine göre uygun şekilde makine koduna derler ve genellikle çıktı olarak yürütülebilir dosyanın (executable file) oluşturulmasını sağlar. Bu eyleme derleme denir. Bir başka ifadeyle derleyici, bir tür yazı işleyicidir; girdi olarak yazı alır ve çıktı olarak yazı verir.
 
@@ -257,7 +257,7 @@ Kaynak: https://tr.m.wikipedia.org/wiki/Derleyici
 
 ///////////////////////////////////////
 
-Yorumlayıcı (Interpreter) Nedir?
+YORUMLAYICI (INTERPRETER) NEDİR?
 
 Yorumlayıcı (interpreter), yazılımı kısım kısım ele alarak doğrudan çalıştırır. Yorumlayıcılar standart bir çalıştırılabilir kod üretmezler. Yorumlama işlemi aşama aşama yapılmadığı için genellikle ilk hatanın bulunduğu yerde programın çalışması kesilir.
 
@@ -271,7 +271,7 @@ Kaynak: https://tr.m.wikipedia.org/wiki/Yorumlay%C4%B1c%C4%B1
 
 ///////////////////////////////////////
 
-Java Nedir?
+JAVA NEDİR?
 
 Java, Sun Microsystems mühendislerinden James Gosling tarafından geliştirilmeye başlanmış açık kaynak kodlu, nesneye yönelik, platform bağımsız, yüksek verimli, çok işlevli, yüksek seviye, hem yorumlanan hem de derlenen bir dildir.
 
@@ -372,7 +372,7 @@ Kaynak: https://tr.m.wikipedia.org/wiki/Java
 
 ///////////////////////////////
 
-Java'nın Özellikleri
+JAVA'NIN ÖZELLİKLERİ
 
 Java Giriş
 
@@ -427,7 +427,7 @@ Kaynak: https://appmaster.io/tr/blog/java-tanimi-anlami-ozellikler-nedir
 
 ///////////////////////////////////////
 
-Java Veri Tipleri
+JAVA VERİ TİPLERİ
 
 Değişkenler tüm programlama dillerinde kullanılan bir yapı olup, kodlamanın temel yapısını oluşturmaktadır.Değişkenler programlamada geçici bilgileri tuttuğumuz yapılardır ve yazılımcı tarafından belirlenir.Değişkenler sayesinde program içinde yaptığımız işlemleri hafıza da tutar ve gerektiği yerlerde kullanırız. 
 
@@ -461,7 +461,7 @@ Kaynak: https://kodlamavakti.com/java/degiskenler-ve-veri-tipleri/
 
 Java programlama dilinde, verileri saklamak ve işlemek için farklı veri tipleri kullanılır. Bu veri tipleri, temel (primitive) veri tipleri ve referans (non-primitive) veri tipleri olmak üzere iki ana kategoriye ayrılır.
 
-Temel Veri Tipleri (Primitive Data Types)
+TEMEL VERİ TİPLERİ (Primitive Data Types)
 
 Temel veri tipleri, Java’nın dilinde yerleşik olarak bulunan ve basit veri türlerini temsil eden tiplerdir.
 
@@ -474,7 +474,7 @@ double: 64 bit veya 8 byte bellek kullanır. Çift hassasiyetli ondalık sayıla
 char: 16 bit veya 2 byte bellek kullanır. Tek bir karakteri (Unicode karakterler dahil) saklar. Özellikle metin işleme için kullanılır.
 boolean: Genellikle tam olarak belirli bir boyuta sahip değil, ancak çoğu durumda bir byte bellek kullanır. true veya false mantıksal değerlerini saklar.
 
-Referans Veri Tipleri (Reference Data Types)
+REFERANS VERİ TİPLERİ (Reference Data Types)
 
 Referans veri tipleri, bellekte bir nesnenin referansını saklar, bu nedenle veri türünün kendisi için sabit bir boyut yoktur. Ancak bu referanslar nesneleri işaret ettiği için, bellekteki nesnelerin büyüklüğü bu nesnelerin türüne ve içerdikleri veriye bağlıdır.
 
@@ -485,5 +485,19 @@ String, dizi (array) ve sınıf nesnesi (ArrayList) gibi referans veri tipleri b
 Kaynak: http://ders.codingbytime.com/java-veri-tipleri/
 
 /////////////////////////////////////
+
+JAR VE WAR DOSYALARI
+
+Bu dosyalar sadece dosya sıkıştırılmış java jar aracını kullanmaktadır. Bu dosyalar farklı amaçlar için oluşturulmuştur. Bu dosyaların açıklaması:
+
+.jar dosyaları: jar dosyası içerir. Kütüphaneler, kaynaklar ve aksesuarlar dosyaları, özellik dosyalar gibi.
+
+.war dosyalar: war dosyası içerir. Web uygulaması olabilir Herhangi bir sunucu uygulaması/jsp ile kurulan kap. .war dosyası jsp içerir. Html, javascript ve diğer dosyalar web gelişimi için gerekli uygulamalardır.
+
+Kaynak: https://sorucevap.netgez.com/java-savas-vs-jar---fark-nedir
+
+/////////////////////////////////
+
+
 
 
