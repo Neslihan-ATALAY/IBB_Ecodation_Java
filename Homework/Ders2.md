@@ -82,3 +82,23 @@ Kaynak: https://www.dijitalders.com/icerik/44/2763/java_escape_sequence_kullanim
 
 /////////////////////////////
 
+SCANNER SINIFI
+
+Java Konsoldan Veri Almak
+Java’da konsoldan veri almak için Scanner sınıfı kullanılır. Ama bu sınıfı kullanmadan önce sınıfımıza Scanner sınıfını dahil etmemiz gerekir. Bunun için import deyimi kullanılır.
+import java.util.Scanner;
+
+Java Veri Alma Metotları
+Method	      Açıklama
+nextBoolean()	Kullanıcıdan boolean değişkenlere veri almak için kullanılır
+nextByte()	Kullanıcıdan byte değişkenlere veri almak için kullanılır
+nextDouble()	Kullanıcıdan double değişkenlere veri almak için kullanılır
+nextFloat()	Kullanıcıdan float değişkenlere veri almak için kullanılır
+nextInt()	Kullanıcıdan int değişkenlere veri almak için kullanılır
+nextLine()	Kullanıcıdan String değişkenlere veri almak için kullanılır
+nextLong()	Kullanıcıdan long değişkenlere veri almak için kullanılır
+nextShort()	Kullanıcıdan short değişkenlere veri almak için kullanılır
+
+Kaynak: https://kodlamavakti.com/java/konsoldan-veri-alma-scanner/
+
+//////////////////////////
