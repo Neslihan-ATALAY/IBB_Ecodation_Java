@@ -459,3 +459,28 @@ Kaynak: https://kodlamavakti.com/java/degiskenler-ve-veri-tipleri/
 
 ///////////////////////////////////////
 
+Java programlama dilinde, verileri saklamak ve işlemek için farklı veri tipleri kullanılır. Bu veri tipleri, temel (primitive) veri tipleri ve referans (non-primitive) veri tipleri olmak üzere iki ana kategoriye ayrılır.
+
+Temel Veri Tipleri (Primitive Data Types)
+
+Temel veri tipleri, Java’nın dilinde yerleşik olarak bulunan ve basit veri türlerini temsil eden tiplerdir.
+
+byte: 8 bit veya 1 byte bellek kullanır. -128 ile 127 arasında tamsayıları saklar. Özellikle dosya işlemleri ve ağ iletişimi gibi alanlarda kullanışlıdır.
+short: 16 bit veya 2 byte bellek kullanır. -32,768 ile 32,767 arasında tamsayıları saklar. Genellikle yer tasarrufu gereken durumlarda kullanılır.
+int: 32 bit veya 4 byte bellek kullanır. -2,147,483,648 ile 2,147,483,647 arasında tamsayıları saklar. Genel amaçlı bir tamsayı veri tipidir ve sıklıkla kullanılır.
+long: 64 bit veya 8 byte bellek kullanır. Çok büyük tamsayıları saklamak için kullanılır. Örneğin, zaman damgalarını saklamak için idealdir.
+float: 32 bit veya 4 byte bellek kullanır. Ondalık sayıları (kesirli sayıları) saklar. Kesirli değerlerde hassasiyet kaybı yaşanabilir.
+double: 64 bit veya 8 byte bellek kullanır. Çift hassasiyetli ondalık sayıları saklar ve daha yüksek hassasiyet sunar. Bilimsel hesaplamalarda sıkça kullanılır.
+char: 16 bit veya 2 byte bellek kullanır. Tek bir karakteri (Unicode karakterler dahil) saklar. Özellikle metin işleme için kullanılır.
+boolean: Genellikle tam olarak belirli bir boyuta sahip değil, ancak çoğu durumda bir byte bellek kullanır. true veya false mantıksal değerlerini saklar.
+
+Referans Veri Tipleri (Reference Data Types)
+
+Referans veri tipleri, bellekte bir nesnenin referansını saklar, bu nedenle veri türünün kendisi için sabit bir boyut yoktur. Ancak bu referanslar nesneleri işaret ettiği için, bellekteki nesnelerin büyüklüğü bu nesnelerin türüne ve içerdikleri veriye bağlıdır.
+
+Örneğin, bir String nesnesi metin verisi içerdiğinden ve bu veri boyutu değişebileceğinden, String türündeki bir referansın kendisi sabit bir boyuta sahiptir, ancak içerdiği verinin boyutu değişebilir.
+
+Kaynak: https://ders.codingbytime.com/java-veri-tipleri/
+
+/////////////////////////////////////
+
