@@ -39,4 +39,31 @@ Programlama dillerinin topluluk standartları ve kılavuzları, hangi yazım for
 
 Kaynak: https://appictohub.com/blog/31/yazim-formatlari-snake-case-camel-case-pascal-case-ve-kebab-case-arasindaki-farklar
 
-////////////////////////////////
+///////////////////////////
+
+STACK MEMORY - HEAP MEMORY
+
+Stack bellek uzun bir kutu şeklinde gibidir. Yeni bir nesne eklenmek istendiğinde, bu nesne en üstte olacak şekilde sıralanır. En alttaki nesneye ulaşmak için en üstteki nesneleri tek tek çıkarmak gerekir. Basittir. Heap belleği ise geniş bir oda şeklinde gibidir. Boş bulunan her yere bir nesne yerleştirilir ve istenilen bir nesne de istenilen anda alınabilir. Tabiki geniş bir odada istenilen nesneyi aramak vakit alan bir işlemdir. Komplekstir.
+
+Kaynak: https://www.yazilimuzmanlari.com/Articles/Detail/Stack_ve_Heap_Bellek/118
+
+Stack ve Heap, bellek yönetiminde kullanılan iki farklı veri yapısıdır.
+
+Stack, LIFO (Last In First Out) yapısına sahip bir veri yapısıdır. Yani en son eklenen veri, en önce çıkarılır. Stack bellekte yer kaplar ve programın çalışma zamanı sırasında kullandığı değişkenler, fonksiyon çağrıları gibi verileri saklar.
+
+Stack, bellekte bir takım bölümleri ayırmaktadır. İşlemler için en üstteki bölüme ekleme ve çıkarma işlemi yapılır. Bu nedenle, stack aynı zamanda LIFO (Last In First Out) yapısına sahip olarak adlandırılır.
+
+Stack veri yapısı çeşitli programlama dillerinde kullanılabilir. Örneğin; fonksiyon çağrıları, return adresleri, local değişkenler gibi işlemler için kullanılır. Ayrıca, backtracking, undo/redo gibi işlemlerde de kullanılabilir.
+
+Heap ise, bellekte rastgele yer kaplar ve programın çalışma zamanı sırasında dinamik olarak oluşan verileri saklar. Heap, FIFO (First In First Out) yapısına sahip değildir. Programcının bellekte ne zaman ve ne kadar yer ayrılması gerektiğini kontrol etmesi gerekir.
+
+Heap, bellekte bir takım bölümleri ayırmaktadır. İşlemler için herhangi bir bölüme ekleme ve çıkarma işlemi yapılır. Heap veri yapısı, dinamik bellek alocasyonu için kullanılır. Örneğin; new ve malloc gibi komutların arkasında heap kullanılır. Ayrıca, Priority Queue ve Huffman Coding gibi algoritmalarda da kullanılabilir.
+
+Heap veri yapısı genellikle iki türde kullanılır: Max-Heap ve Min-Heap. Max-Heap, her düğümde en büyük değerin bulunduğu bir yapıdır, Min-Heap ise her düğümde en küçük değerin bulunduğu bir yapıdır.
+
+Genel olarak, Stack bellekte daha az yer kaplar fakat okuma/yazma işlemleri daha hızlıdır. Heap ise daha fazla bellek yer kaplar ancak okuma/yazma işlemleri daha yavaştır.
+
+Kaynak: https://ilaydakosar.com/stack-ve-heap-kavramlari/
+
+////////////////////////////
+
