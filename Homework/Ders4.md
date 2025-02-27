@@ -217,13 +217,17 @@ String buffer özellikleri: Değişebilir, thread güvenli, az verimli bellek ku
 
 Kaynak: https://www.geeksforgeeks.org/string-vs-stringbuilder-vs-stringbuffer-in-ja
 
-BREAK, CONTINUE, RETURN
+/////////////////////////////
+
+BREAK, CONTINUE
 
 Java'da break deyimi , döngü içerisinde koşul sağlanmadan döngüyü bitirmek için kullanılır.
 
 Java'da "continue" deyimi , döngü içinde bir koşul oluştuğunda o döngüyü tamamlamadan bir sonraki kademeye geçmeye yarar.
 
 Kaynak: https://kodlamavakti.com/java/donguler-break-continue-kullanimi/
+
+RETURN
 
 Java'da oluşturduğumuz bir metodun bir değer üretmesini istendiğinde, "return" deyimi kullanılır. Metot içerisinde yazılan kod parçacıkları çalışacaktır, buna ek olarak metot içinde oluşturduğumuz bir veriyi dışarıya aktarma ihtiyacı duyabiliriz, bu durumlarda "return" deyimi kullanılır. Geri dönecek değerin veri tipi, metot tanımlarken verdiğimiz veri tipi ile aynı olmalıdır. Aksi halde derleyici tarafından hata alınır.
 
