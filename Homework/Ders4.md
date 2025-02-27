@@ -215,4 +215,19 @@ String builder özellikleri: Değişebilir, thread güvenli değil, verimli bell
 
 String buffer özellikleri: Değişebilir, thread güvenli, az verimli bellek kullanımı, düşük performans (senkronizasyon sayesinde). Thread güvenliği gerekli olduğunda kullanılır. String buffer'lar JDK 1.0 ile tanıtıldı.
 
-Kaynak: https://www.geeksforgeeks.org/string-vs-stringbuilder-vs-stringbuffer-in-java/
+Kaynak: https://www.geeksforgeeks.org/string-vs-stringbuilder-vs-stringbuffer-in-ja
+
+BREAK, CONTINUE, RETURN
+
+Java'da break deyimi , döngü içerisinde koşul sağlanmadan döngüyü bitirmek için kullanılır.
+
+Java'da "continue" deyimi , döngü içinde bir koşul oluştuğunda o döngüyü tamamlamadan bir sonraki kademeye geçmeye yarar.
+
+Kaynak: https://kodlamavakti.com/java/donguler-break-continue-kullanimi/
+
+Java'da oluşturduğumuz bir metodun bir değer üretmesini istendiğinde, "return" deyimi kullanılır. Metot içerisinde yazılan kod parçacıkları çalışacaktır, buna ek olarak metot içinde oluşturduğumuz bir veriyi dışarıya aktarma ihtiyacı duyabiliriz, bu durumlarda "return" deyimi kullanılır. Geri dönecek değerin veri tipi, metot tanımlarken verdiğimiz veri tipi ile aynı olmalıdır. Aksi halde derleyici tarafından hata alınır.
+
+Kaynak: https://academy.patika.dev/courses/java101/return-void
+
+/////////////////////////////////
+
