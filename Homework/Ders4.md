@@ -273,4 +273,121 @@ Kaynak: https://kodlamavakti.com/java/static-kullanimi/
 
 /////////////////////////
 
+OVERLOAD VE OVERRIDE NEDİR?
+
+Overload ve Override Nedir?
+
+Programlamada nesne yönelimli yaklaşım (OOP), kodun daha esnek, modüler ve yeniden kullanılabilir olmasını sağlayan önemli bir paradigmadır. Bu yaklaşımın temel prensiplerinden ikisi "method overloading" (metot aşırı yükleme) ve "method overriding" (metot geçersiz kılma) kavramlarıdır. Bu kavramlar, programcıların aynı metodu farklı şekillerde kullanmalarına olanak tanır ve nesneler arasında daha tutarlı bir davranış sağlar. Aşağıda bu iki kavramın detaylarına ve nasıl kullanıldıklarına daha yakından bakacağız.
+
+Method Overloading (Metot Aşırı Yükleme)
+
+Method overloading, bir sınıfta aynı isimde birden fazla metodun tanımlanmasına olanak tanır. Bu metodlar, parametre sayıları veya türleri ile birbirinden ayrılır. Aynı metot adı kullanılsa bile, derleyici hangi metodun çağrılacağını parametre türlerine ve sayısına göre belirler.
+
+Overload Nasıl Çalışır?
+
+Metot aşırı yükleme, genellikle programcıların bir işlemi farklı türde parametrelerle gerçekleştirmesi gerektiğinde kullanılır. Örneğin, aynı metodu hem tamsayılarla hem de ondalık sayılarla çalışacak şekilde tanımlamak mümkündür.
+
+Örnek bir overload kullanımı:
+```java
+class Calculator {
+// Tamsayı parametrelerle toplama işlemi
+public int add(int a, int b) {
+return a + b;
+}
+// Ondalık parametrelerle toplama işlemi
+public double add(double a, double b) {
+return a + b;
+}
+}
+Yukarıdaki örnekte, aynı metot adı olan `add` hem tamsayılar hem de ondalık sayılar için tanımlanmıştır. Parametre türlerine göre uygun metot çağrılır.
+
+Overloading Avantajları
+1. Esneklik: Farklı parametre türleri ile aynı işlemi gerçekleştirebilirsiniz.
+2. Temiz Kod: Farklı adlara sahip metodlar tanımlamaktansa aynı adı kullanarak kodu daha okunabilir hale getirir.
+3. Bakım Kolaylığı: Aynı metot adı altında benzer işlevlerin gruplanması, bakım ve genişletilebilirlik açısından faydalıdır.
+
+Overload Sınırlamaları
+- Return Tipi: İki metodun yalnızca dönüş tipleri farklı ise bu overload olarak kabul edilmez. Parametre listesinde mutlaka fark olmalıdır.
+- Anlam Karmaşası: Farklı parametre kombinasyonları, yanlış metot çağrımlarına neden olabilir. Parametrelerin dikkatli seçilmesi gerekir.
+
+Method Overriding (Metot Geçersiz Kılma)
+
+Method overriding, bir alt sınıfın (subclass), üst sınıfındaki (superclass) bir metodu yeniden tanımlamasıdır. Bu durumda alt sınıf, üst sınıfta tanımlı olan metodu "geçersiz kılar" ve kendi spesifik davranışını sağlar. Overriding, özellikle kalıtım ile ilgili kavramlarda önemlidir. Bir üst sınıf genel davranışı tanımlar ve alt sınıf bu davranışı özelleştirebilir.
+
+Override Nasıl Çalışır?
+
+Alt sınıfta tanımlanan metod, üst sınıftaki ile aynı imzaya (aynı isim, aynı parametreler) sahip olmalıdır. Ancak alt sınıf, bu metodu kendi gereksinimlerine göre yeniden yazar.
+
+Örnek bir override kullanımı:
+```java
+class Animal {
+public void sound() {
+System.out.println("Hayvan bir ses çıkarıyor");
+}
+}
+class Dog extends Animal {
+@Override
+public void sound() {
+System.out.println("Köpek havlıyor");
+}
+}
+
+Yukarıdaki örnekte, `Dog` sınıfı `Animal` sınıfından türetilmiştir ve `sound()` metodunu geçersiz kılmıştır. `Dog` sınıfından bir nesne oluşturulduğunda, üst sınıftaki `sound()` metodu yerine, `Dog` sınıfındaki metot çalışır.
+
+Overriding Avantajları
+1. Polimorfizm: Overriding, polimorfizmin temelini oluşturur. Bu sayede farklı sınıflardaki nesneler, aynı metot çağrılarıyla farklı sonuçlar verebilir.
+2. Özelleştirme: Üst sınıftan miras alınan metodlar alt sınıfta istenildiği gibi özelleştirilebilir.
+3. Yeniden Kullanım: Kod tekrarını azaltarak, var olan metodlar üzerinden yeni işlevler oluşturulabilir.
+
+Override Sınırlamaları
+- Metot İmzası: Override edilen metodun imzası, üst sınıftaki ile aynı olmalıdır.
+- Erişim Belirleyicileri: Override edilen metot, üst sınıftakinden daha kısıtlayıcı bir erişim belirleyicisine sahip olamaz. Örneğin, üst sınıfta `public` olan bir metot alt sınıfta `private` yapılamaz.
+
+Overloading ve Overriding Arasındaki Farklar
+
+1. Amaç:
+
+- Overloading, aynı metodu farklı parametrelerle kullanmayı sağlar.
+
+- Overriding ise kalıtım yoluyla bir metodun işlevini değiştirmek için kullanılır.
+
+2. Parametreler:
+
+- Overloading’de parametreler farklıdır.
+
+- Overriding’de ise parametreler aynıdır.
+
+3. Sınıflar Arası İlişki:
+
+- Overloading aynı sınıf içinde gerçekleşir.
+
+- Overriding ise iki farklı sınıf (üst ve alt sınıf) arasında gerçekleşir.
+
+4. Polimorfizm:
+
+- Overriding, polimorfizmi desteklerken, overloading desteklemez.
+
+Overloading ve Overriding ile İlgili Sıkça Sorulan Sorular
+
+1. Metot aşırı yükleme nedir?
+
+Metot aşırı yükleme (overloading), aynı sınıfta aynı isme sahip birden fazla metot tanımlamaktır. Farklı parametreler sayesinde aynı işlem farklı şekillerde yapılabilir.
+
+2. Metot geçersiz kılma nedir?
+
+Metot geçersiz kılma (overriding), bir alt sınıfın üst sınıfta tanımlı bir metodu yeniden yazmasıdır. Bu, alt sınıfın üst sınıftan miras aldığı bir metodu özelleştirmesine olanak tanır.
+
+3. Overloading ve overriding arasındaki temel farklar nelerdir?
+
+Overloading, aynı isimli metodun farklı parametrelerle kullanılmasını sağlar. Overriding ise üst sınıfta tanımlanan bir metodun alt sınıf tarafından yeniden tanımlanmasıdır. Overloading aynı sınıf içinde gerçekleşirken, overriding kalıtım yoluyla iki farklı sınıf arasında gerçekleşir.
+
+4. Overloading ve overriding polimorfizm ile nasıl ilişkilidir?
+
+Polimorfizm, nesne yönelimli programlamada aynı metodun farklı sınıflarda farklı davranışlar sergilemesini sağlar. Overriding, polimorfizmin bir formudur çünkü aynı metodun farklı alt sınıflar tarafından farklı şekilde uygulanmasına olanak tanır. Overloading ise parametreye bağlı bir esneklik sunar ancak polimorfizmi desteklemez.
+
+Overloading ve overriding, nesne yönelimli programlamada metodların daha esnek ve yeniden kullanılabilir hale gelmesi için kullanılan iki önemli kavramdır. Overloading, aynı isimde metodların farklı parametrelerle çalışmasını sağlanırken, overriding ise miras alınır.
+
+Kaynak: https://www.bulgsm.com/threads/overload-ve-override-nedir.26077/
+
+////////////////////////
 
