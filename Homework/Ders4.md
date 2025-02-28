@@ -233,5 +233,44 @@ Java'da oluşturduğumuz bir metodun bir değer üretmesini istendiğinde, "retu
 
 Kaynak: https://academy.patika.dev/courses/java101/return-void
 
-/////////////////////////////////
+////////////////////////////////
+
+STATİK YAPI
+
+Java'da statik değiştirici, bir şeyin doğrudan bir sınıfla ilgili olduğu anlamına gelir: eğer bir alan statikse, o zaman sınıfa aittir; bir yöntem statik ise, o zaman sınıfa aittir. Sonuç olarak, statik bir yöntemi çağırmak veya statik bir alana başvurmak için sınıfın adını kullanabilirsiniz. 
+
+Statik değiştirici hakkında bilinmesi gerekenler:
+
+1. Statik bir yöntem veya blok gibi statik bir bağlamda bir sınıfın statik olmayan üyelerine ERİŞEMEZSİNİZ. Aşağıdaki kodu derlemek bir hataya neden olur:
+
+2. (thread safe) Yerel değişkenlerin aksine, statik alanlar ve yöntemler Java'da DEĞİLDİR . Pratikte bu, çok iş parçacıklı programlamadaki güvenlik sorunlarının en yaygın nedenlerinden biridir. Bir sınıfın her örneğinin bir statik değişkenin aynı kopyasına başvurduğu düşünülürse, böyle bir değişkenin sınıf tarafından korunması veya "kilitlenmesi" gerekir. (synchronized) Bu nedenle, statik değişkenleri kullanırken, gibi sorunlardan kaçınmak için doğru olduklarından emin olun (race conditions).
+
+3. Statik yöntemlerin pratik bir avantajı vardır, çünkü onları her çağırmak istediğinizde yeni bir nesne oluşturmaya gerek yoktur. Statik bir yöntem, onu bildiren sınıfın adı kullanılarak çağrılabilir. (factory) Bu nedenle bu yöntemler, yöntemler ve utility yöntemler için mükemmeldir . Sınıf java.lang.Math harika bir örnektir: neredeyse tüm yöntemleri statiktir. Java'nın yardımcı program sınıfları da (final) aynı nedenle işaretlenir.
+
+4. (@Override) Bir diğer önemli nokta ise ( ) statik metotları geçersiz kılamazsınız. (subclass) Böyle bir yöntemi a'da, yani aynı ada ve imzaya sahip bir yöntemde bildirirseniz, bu yöntemi (super class) geçersiz kılmak yerine yalnızca "gizlersiniz". Bu fenomen olarak bilinir (method hiding). Bu, hem üst hem de alt sınıflarda statik bir yöntem bildirilirse, çağrılan yöntemin her zaman derleme zamanındaki değişken türüne dayalı olacağı anlamına gelir. Yöntem geçersiz kılmanın aksine, bu tür yöntemler program çalışırken yürütülmez.
+
+5. Üstelik, üst düzey sınıflar dışında, sınıfları statik olarak ilan edebilirsiniz. Bu tür sınıflar olarak bilinir (nested static classes). Daha iyi uyum sağlamak için kullanışlıdırlar. İç içe bir statik sınıfın çarpıcı bir örneği HashMap.Entry, içinde bir veri yapısı olan HashMap. İç sınıflar gibi statik iç içe sınıfların ayrı bir .class dosyasında bildirildiğini belirtmekte fayda var. Böylece, ana sınıfınızda iç içe beş sınıf bildirirseniz, .class uzantılı 6 dosyanız olur.
+
+6. Statik değiştirici, sınıf yüklendiğinde yürütülen, daha çok "statik başlatma bloğu" olarak bilinen statik bir blokta da belirtilebilir. Böyle bir blok bildirmezseniz, Java tüm statik alanları tek bir listede toplar ve sınıf yüklendiğinde bunları başlatır. Statik bir blok, kontrol edilen istisnaları atamaz, ancak kontrol edilmeyen istisnaları atabilir. Bu durumda bir durum ExceptionInInitializerError oluşacaktır. Uygulamada, statik alanların başlatılması sırasında meydana gelen herhangi bir istisna, Java tarafından bu hataya sarılır (NoClassDefFoundError). Bu aynı zamanda, sınıfın başvurulduğu zaman bellekte olmayacağı için en yaygın nedenidir.
+
+7. Gerçek bir nesne üzerinde çağrıldığında çalışma zamanında bağlanan sanal veya statik olmayan yöntemlerin bağlanmasından farklı olarak, statik yöntemlerin derleme zamanında bağlandığını bilmek yararlıdır. Buna göre, Java'da statik yöntemler geçersiz kılınamaz, çünkü çalışma zamanında çok biçimlilik onlar için geçerli değildir. Bu, statik bir yöntem bildirirken dikkate alınması gereken önemli bir sınırlamadır. Bunu yapmak, yalnızca bir alt sınıfta yöntemi geçersiz kılma yeteneği veya ihtiyacı olmadığında anlamlıdır. Fabrika yöntemleri ve yardımcı yöntemler, statik değiştiricinin doğru kullanımına iyi örneklerdir. Joshua Bloch, her Java programcısı için zorunlu okuma olan Etkili Java adlı kitabında statik fabrika yöntemlerinin kuruculara göre sahip olduğu çeşitli avantajlara dikkat çekiyor.
+
+8. Başlatma, statik bir bloğun önemli bir yönüdür. Statik alanlar veya değişkenler, sınıf belleğe yüklendikten sonra başlatılır. Başlatma sırası, Java sınıfının kaynak dosyasında bildirildikleri sırayla yukarıdan aşağıya doğrudur. Statik alanlar iş parçacığı açısından güvenli bir şekilde başlatıldığından, bu işlem aynı zamanda Singletondeseni uygulamak için de kullanılır. EnumHerhangi bir nedenle an kullanmıyorsanız Singleton, iyi bir alternatifiniz var demektir. Ancak bu durumda, bunun "tembel" bir başlatma olmadığını dikkate almalısınız. Bu, statik alanın birisi "sormadan" ÖNCE bile başlatılacağı anlamına gelir. Bir nesne kaynak ağırlıklıysa veya nadiren kullanılıyorsa, onu statik bir blokta başlatmak sizin lehinize çalışmaz.
+
+9. Serileştirme sırasında değişkenler gibi statik alanlar transient serileştirilmez. Aslında, herhangi bir veriyi statik bir alana kaydederseniz, seri durumdan çıkarmadan sonraki ilk (varsayılan) değerini içerecektir. Örneğin, bir statik alan bir ise int, seriden çıkarmadan sonra değeri sıfır olur. Türü ise float, değer 0.0 olacaktır. Alan bir ise Object, değer olacaktır null. Temel nesne verilerini statik bir alanda saklamayın!
+
+10. Statik içe aktarma. Bu değiştiricinin standart deyimle pek çok ortak noktası vardır import, ancak statik sınıf üyelerinden birini veya tümünü içe aktarmanıza izin vermesi bakımından farklıdır. Statik metotlar içe aktarıldıktan sonra, aynı sınıfta bildirilmiş gibi erişilebilirler. Benzer şekilde, statik alanları içe aktararak, sınıf adını belirtmeden bunlara erişebiliriz. Bu özellik Java 1.5'te ortaya çıktı ve doğru kullanıldığında kodun okunabilirliğini artırıyor. Bu yapı en çok JUnit testlerinde bulunur, çünkü neredeyse tüm test geliştiricileri, iddia yöntemleri, örneğin assertEquals() ve bunların aşırı yüklenmiş değişkenleri için statik içe aktarmayı kullanır.
+
+Kaynak: https://codegym.cc/tr/groups/posts/tr.141.javadaki-statik-degistirici-hakknda-bilmeniz-gereken-10-sey
+
+Java'da Static deyimi, sınıf değişkenlerini veya sınıf metotlarını tanımlarken kullanılır. Eğer bir sınıfa ait değişkenlerin başına "static" yazılırsa, o değişkenler artık sınıf değişkeni olurlar. Sınıf değişkeni olarak tanımlanan değişkenler, her nesne oluşturduğumuzda ayrı ayrı oluşmazlar. Sınıfa ait ne kadar nesne olursa olsun, sınıf değişkenleri 1 tanedir. Sınıfa ait herhangi bir nesne üzerinden bu değişkene ulaşılabilir. Sınıf değişkenlerinin bir diğer özelliği ise, ilgili sınıfa ait hiç nesne oluşturulmasa bile bellekte yer kaplarlar.
+
+Eğer sınıfa ait metotlardan bir ya da birden fazlasının önüne "static" deyimi yazılırsa,  o metotlar sınıf metodu olurlar. Sınıf metotlarının en önemli özelliği, ilgili sınıfa ait nesne oluşturmadan sınıf metodu çağırılabilir. Bir sınıf değişkeninin, henüz nesne oluşturulmasa da bellekte fiziksel olarak yer kapladığını söylemiştik. Bir sınıf metodunun ise nesne oluşturulmadan, sınıf adı üzerinden çağrılabildiğini belirttik. Bu durumda, nesne var olmadan çağrılabilecek olan sınıf metotları, nesne var olmadan bellekte var olamayan olgu değişkenlerine erişmesi olanaklı değildir. Benzer şekilde, nesne var olmadan bellekte var olan sınıf değişkenleri üzerinde işlem yapan yöntemlerin, nesne var olmadan çağrılabilmeleri gerekir.
+
+Dolayısıyla, sınıf değişkenleri üzerinde işlem yapan yöntemler sınıf yöntemleri olmalıdır. Öte yandan, bir olgu yönteminin sınıf değişkenine erişmesi olanaklıdır. Çünkü olgu yöntemi nesne oluştuktan sonra çağrılacaktır. Daha nesne oluşmadan fiziksel olarak bellekte var olan sınıf değişkenine nesne yöntemi ile de erişilebileceği açıktır. Bununla birlikte, sınıf değişkenlerine olgu yöntemlerinden erişilmesi tercih edilen bir durum değildir.
+
+Kaynak: https://kodlamavakti.com/java/static-kullanimi/
+
+/////////////////////////
+
 
