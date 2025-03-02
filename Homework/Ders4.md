@@ -391,3 +391,31 @@ Kaynak: https://www.bulgsm.com/threads/overload-ve-override-nedir.26077/
 
 ////////////////////////
 
+String Benzerliği ile String Eşitliği
+
+Java String nesnelerini karşılaştırmada nesne aynılığı ve string eşitliği arasındaki farkı görebilmek için dikkatli olunmalıdır.
+
+Örneklere bakınız:
+String s1 = new String("hello");
+String s2 = new String("hello");
+String s3 = new String("Hello");
+String s4 = s1;    // s1 ve s4 aynı
+String s5 = "hello";
+String s6 = "hello";
+
+String nesneler için eşitlik ve aynılık farklıdır. İki farklı (aynı olmayan) String nesneler eğer aynı string değeri saklıyor ise eşittir. Bu sebeple s1, s2, s4, s5 ve s6 eşittir. s1 ve s4 string'leri aynıdır.
+
+String'lerin eşitliği karşılaştırıldığında aşağıdaki sonuçlar elde edilir:
+s1.equals(s2) ==> true  s1.equalsIgnoreCase(s3)  ==> true
+s1.equals(s3) ==> false s1.equals(s5)            ==> true
+s1.equals(s4) ==> true  s1.equals(s6)            ==> true
+
+String'lerin aynılığı karşılaştırıldığında ise şu sonuçlar bulunur:
+s1 == s2  ==> false            s1 == s3  ==> false
+s1 == s4  ==> true             s1 == s5  ==> false
+s5 == s6  ==> true
+
+Kaynak: https://runestone.academy/ns/books/published/javajavajava/comparing-strings.html
+
+////////////////////////////
+
