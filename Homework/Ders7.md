@@ -143,7 +143,7 @@ Kaynak: https://learn.microsoft.com/tr-tr/dotnet/csharp/programming-guide/classe
 
 //////////////////////////////
 
-IsEmpty
+JAVA ISEMPTY() İŞLEVİ
 
 Bir değişken başlatılıp başlatılmadığını gösteren bir Boole değeri döndürür.
 
@@ -156,24 +156,61 @@ IsEmpty, değişken başlatılmamışsa veya açıkça Boş olarak ayarlandıysa
 
 Kaynak: https://support.microsoft.com/tr-tr/topic/isempty-%C4%B0%C5%9Flevi-a86d5871-f6bd-455c-9256-a69a42e55e5
 
-isEmpty() işlevini ve null değeri
+JAVA NULL STRING
+
+"Java'da boş bir dize (string), kelimenin tam anlamıyla 'null' için ayrılmış bir kelimeye eşittir. Herhangi bir fiziksel adrese işaret etmeyen dize anlamına gelir.”
+
+Java programlama dilinde, hiçbir şeyi ifade etmek için “null” String kullanılır. Ayrıca, String değişkeninin aslında herhangi bir bellek konumuna bağlı olmadığını gösterir.
+
+Programlamada çok sık olarak, tamamen boş olduğunu ve programda belirli bir amaç için kullanılacağını göstermek için bir String'e null atanır. Boş bir String üzerinde herhangi bir işlem gerçekleştirir veya bir yöntem çağırırsanız, java.lang.NullPointerException öğesini atar. İşte boş bir String bildirimini gösteren temel bir örnek. Ayrıca, geçerli bir null  String olup olmadığının nasıl kontrol edileceğini gösterir.
+
+public class Example {
+    public static void main(String[] args) {
+        String myName = null;
+		String nullString = null;
+        if (myName == null) {
+            System.out.println("String = " + myName);
+		}
+		if (myName == nullString) {
+			System.out.println("Her iki string de null.");
+		}
+		myName = "isim soyisim";
+		if (myName != null) {
+			System.out.println("String = " + myName);
+        }
+    }
+}
+Programın Çıktısı:
+String = null
+Her iki dize de null.
+String = isim soyisim
+
+Kaynak: https://codegym.cc/tr/groups/posts/tr.666.java-dizenin-bos-bos-veya-bos-olup-olmadgn-kontrol-edin
+
+isEmpty() işlevi ve null değeri örneği:
+
 class Main {
     public static void main(String[] args) {
-        String emptyVariable = "";
-        if (emptyVariable.isEmpty())
+        String string1 = "";
+        // String boş ise
+        if (string1.isEmpty())
             System.out.println("empty");
-        emptyVariable = null;
-        if (emptyVariable == null)
+
+        // String null ise
+        string1 = null;
+        if (string1 == null)
             System.out.println("null");
             
-        String empty2 = "";
-        if (empty2!=null && !empty2.isEmpty())
+        String string2 = "";
+        if (string2 != null && !string2.isEmpty())
             System.out.println(empty2);
-        empty2 = null;
-        if (empty2!=null && !empty2.isEmpty())
+        string2 = null;
+        if (string2 != null && !string2.isEmpty())
             System.out.println(empty2);
-        empty2 = "not empty and not null";
-        if (empty2!=null && !empty2.isEmpty())
+
+        // String hem boş değil ise hem de değeri null değil ise
+        string2 = "not empty and not null";
+        if (string2 != null && !string2.isEmpty())
             System.out.println(empty2);
     }
 }
@@ -183,4 +220,3 @@ null
 not empty and not null
 
 ////////////////////////////////
-
