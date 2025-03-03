@@ -143,3 +143,44 @@ Kaynak: https://learn.microsoft.com/tr-tr/dotnet/csharp/programming-guide/classe
 
 //////////////////////////////
 
+IsEmpty
+
+Bir değişken başlatılıp başlatılmadığını gösteren bir Boole değeri döndürür.
+
+IsEmpty ( ifade )
+
+Gerekli ifade bağımsız değişken sayısal veya dize ifadesi içeren bir değişkendir. Ancak bağımsız değişkenlerin başlatılıp başlatılmadığını belirlemek için IsEmpty kullanıldığından, ifade bağımsız değişkeni çoğunlukla tek bir değişken adıdır.
+
+Açıklamalar
+IsEmpty, değişken başlatılmamışsa veya açıkça Boş olarak ayarlandıysa True döndürür; aksi takdirde False döndürür. İfade birden fazla değişken içeriyorsa her zaman False döndürülür. IsEmpty yalnızca değişkenler için anlamlı bilgiler döndürür.
+
+Kaynak: https://support.microsoft.com/tr-tr/topic/isempty-%C4%B0%C5%9Flevi-a86d5871-f6bd-455c-9256-a69a42e55e5
+
+isEmpty() işlevini ve null değeri
+class Main {
+    public static void main(String[] args) {
+        String emptyVariable = "";
+        if (emptyVariable.isEmpty())
+            System.out.println("empty");
+        emptyVariable = null;
+        if (emptyVariable == null)
+            System.out.println("null");
+            
+        String empty2 = "";
+        if (empty2!=null && !empty2.isEmpty())
+            System.out.println(empty2);
+        empty2 = null;
+        if (empty2!=null && !empty2.isEmpty())
+            System.out.println(empty2);
+        empty2 = "not empty and not null";
+        if (empty2!=null && !empty2.isEmpty())
+            System.out.println(empty2);
+    }
+}
+Programın Çıktısı:
+empty
+null
+not empty and not null
+
+////////////////////////////////
+
